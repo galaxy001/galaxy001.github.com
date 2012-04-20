@@ -9,11 +9,11 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Jekyll Bootstrap
-tagline: Site Tagline
+title : 银河星尘
+tagline: Site Tagline Galaxy
 author :
-  name : Name Lastname
-  email : blah@email.test
+  name : Yuuki Galaxy
+  email : galaxy001#gmail.com
   github : galaxy001
   twitter : galaxy001
   feedburner : feedname
@@ -111,7 +111,7 @@ JB :
   # Set 'provider' to false to turn sharing off globally.
   #
   sharing :
-    provider : false
+    provider : tweet
     
   # Settings for all other include helpers can be defined by creating 
   # a hash with key named for the given helper. ex:
