@@ -18,3 +18,7 @@ This is an example of a WordPress page, you could edit this to put information a
 * * *
 
 以上是在第一台Linux“服务器”上的旧关于页面，现在当然是host在GitHub上啦。
+
+—— {{ site.author.name }} \({{ site.author.email }}\)
+
+    2012年4月21日 7:26:54
