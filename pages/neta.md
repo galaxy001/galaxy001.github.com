@@ -1,8 +1,8 @@
 ---
 layout: page
 slug: my-neta
-title: "传说中的吐槽页"
-description: ""
+title: "My Neta"
+description: "传说中的吐槽页"
 ---
 {% include JB/setup %}
 
