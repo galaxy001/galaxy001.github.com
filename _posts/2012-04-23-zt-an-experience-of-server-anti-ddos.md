@@ -9,7 +9,9 @@ tags: [ddos, server]
 ---
 {% include JB/setup %}
 
-2012-04-22 16:04	25 次围观
+http://www.lovelucy.info/an-experience-of-server-anti-ddos.html<br>
+2012-04-22 16:04	| 25 次围观<br>
+<font color="navy">嘛，新平台上的第一篇新帖子……</font>
 
 * * *
 
@@ -20,7 +22,7 @@ tags: [ddos, server]
 信安专业的 Felix021 和芒果师兄都对这个案例表示出了兴趣，于是我分别和他们分析了一下。这是一段 perl 脚本，写得十分精妙。具体功能就是拿我们的服务器做肉鸡，监听端口获取指令，向指定地址发送数据，从而实行 DDOS 攻击。代码内置了几乎所有浏览器的 UA 字符串，每次都随机抽取其中一个，伪装为正常访问。genGarbage、tcp flood、udp flood、slow get/post 等各种 DDOS 方式均有实现，特别是 sendSlowPostRequest 这个方法，实在太贱了，一点点地发，对方必须 hold 住资源等你发完。。短短数百行代码，却对各种错误异常处理得十分仔细，必然出自高人之手。注释里有些不能识别的字符，也不知道是什么编码，无法推断是哪个国家的黑客写的。。
 
 <font color="navy">
-Galaxy看到注释中有`#id3|slowpost|ya3.ru|3128|/index.html`，就猜到是俄语。到EditPlus中翻了半天，找到`Ukrainian (MAC) 10017`，解出来一看，果然是。<br>
+Galaxy看到注释中有<code>#id3|slowpost|ya3.ru|3128|/index.html</code>，就猜到是俄语。到EditPlus中翻了半天，找到<code>Ukrainian (MAC) 10017</code>，解出来一看，果然是。<br>
 话说，俄语的学名是“乌克兰语”<font style="font-family: monospace;">[j'kreinən]</font>么？
 </font>
 
