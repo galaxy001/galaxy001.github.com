@@ -12,11 +12,11 @@ description: "传说中的吐槽页"
 
 <font color="navy">被这鞋踩或踢到，绝对损伤不小……</font>
 
-<table><tr>
+<table><tr valign="baseline">
 <td>人物介绍：</td>
 <td>图片(<a href="/assets/wp-uploads/2012/LangrisserComplete80.7z" title="花了一个多小时的psd文件">修改版</a>)：</td>
 </tr>
-<tr>
+<tr valign="top">
 <td><img src="/assets/wp-uploads/2012/LangrisserComplete80l.jpg" title="人物介绍"></td>
 <td><img src="/assets/wp-uploads/2012/LangrisserComplete80.jpg" title="有特色的高跟鞋"></td>
 </tr></table>
