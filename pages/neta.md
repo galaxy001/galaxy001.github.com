@@ -1,14 +1,14 @@
 ---
 layout: page
 slug: my-neta
-title: "My Neta"
+title: "传说中的吐槽页"
 description: ""
 ---
 {% include JB/setup %}
 
 ## 11:38 AM Monday, April 23, 2012 ##
 
-早上起来翻`【画集】漆原智志.rar`，结果看到个有特色的高跟鞋设定，来源于PS游戏`(设定集) [うるし原智志] Langrisser Complete I II III`。
+早上起来翻`【画集】漆原智志.rar`，结果看到个有特色的高跟鞋设定，来源于某PS游戏的`(设定集) [うるし原智志] Langrisser Complete I II III`。
 
 <font color="navy">被这鞋踩或踢到，绝对损伤不小……</font>
 
