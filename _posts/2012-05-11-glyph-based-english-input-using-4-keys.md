@@ -3,8 +3,8 @@ layout: post
 title: "只用4个虚拟按钮实现打字"
 slug: "glyph-based-english-input-using-4-keys"
 description: ""
-category: 
-tags: [ZT, Galaxy]
+category: News
+tags: [ZT, Galaxy, myNeta]
 ---
 {% include JB/setup %}
 
