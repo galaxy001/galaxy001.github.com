@@ -61,6 +61,8 @@ task :post do
   open(filename, 'w') do |post|
     post.puts "---"
     post.puts "layout: post"
+    post.puts "date: \'#{Time.now.strftime('%a %Y-%m-%d %H:%M:%S %z')}\'"
+    post.puts "slug: \"#{slug}\""
     post.puts "title: \"#{title.gsub(/-/,' ')}\""
     post.puts 'description: ""'
     post.puts "category: "
@@ -75,7 +77,7 @@ end # task :post
 # If you don't specify a file extention we create an index.html at the path specified
 desc "Create a new page."
 task :page do
-  name = ENV["name"] || "new-page.md"
+  name = ENV["name"] || "pages/new-page.md"
   filename = File.join(SOURCE, "#{name}")
   filename = File.join(filename, "index.html") if File.extname(filename) == ""
   title = File.basename(filename, File.extname(filename)).gsub(/[\W\_]/, " ").gsub(/\b\w/){$&.upcase}
@@ -88,6 +90,8 @@ task :page do
   open(filename, 'w') do |post|
     post.puts "---"
     post.puts "layout: page"
+    post.puts "date: \'#{Time.now.strftime('%a %Y-%m-%d %H:%M:%S %z')}\'"
+    post.puts "slug: \'#{title.gsub(/ /,'-')}\'"
     post.puts "title: \"#{title}\""
     post.puts 'description: ""'
     post.puts "---"
