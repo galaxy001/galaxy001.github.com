@@ -119,13 +119,13 @@ We made 1 million dollars {% comment %} in losses {% endcomment %} this year
 Raw temporarily disables tag processing.
 This is useful for generating content (eg, Mustache, Handlebars) which uses conflicting syntax.
 
-{% highlight ruby %}
-{% raw %}
-{ % raw %}
-  In Handlebars, {{ this }} will be HTML-escaped, but {{{ that }}} will not.
-{ % endraw %}
-{% endraw %}
-{% endhighlight %}
+<div class="highlight"><code class="ruby"><span class="nb">
+&#123;&#37; raw %}<br>
+&nbsp;&nbsp;In Handlebars, &#123;&#123; this }} will be HTML-escaped, but &#123;&#123;&#123; that }}} will not.<br>
+&#123;&#37; endraw %}
+</span></code>
+</div>
+<br>
 
 ### If / Else
 
