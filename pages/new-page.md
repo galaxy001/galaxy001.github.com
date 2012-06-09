@@ -136,5 +136,5 @@ There is no need to include the extension.
 
 To create a link, do:
 {% raw %}
-	[Name of Link]({% post_url 2010-07-21-name-of-post %})
+\[Name of Link\]({% post_url 2010-07-21-name-of-post %})
 {% endraw %}
