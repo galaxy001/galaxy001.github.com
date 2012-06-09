@@ -1038,7 +1038,7 @@ following lines will produce a horizontal rule:
 
 Markdown supports two style of links: *inline* and *reference*.
 
-In both styles, the link text is delimited by [square brackets].
+In both styles, the link text is delimited by \[square brackets\].
 
 To create an inline link, use a set of regular parentheses immediately
 after the link text's closing square bracket. Inside the parentheses,
