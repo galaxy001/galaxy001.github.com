@@ -4,8 +4,8 @@ date: 'Sat 2013-03-30 22:30:23 +0800'
 slug: "why-few-friends-in-japan"
 title: "日本「我的朋友很少」的原因"
 description: ""
-category: [ACG, Sayings]
-tags: [ZT]
+category: ACG
+tags: [ZT, Sayings]
 ---
 {% include JB/setup %}
 

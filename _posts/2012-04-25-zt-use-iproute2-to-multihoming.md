@@ -3,8 +3,8 @@ layout: post
 slug: zt-use-iproute2-to-multihoming
 title: "[ZT]使用 iproute2 进行 MultiHoming 设置"
 description: ""
-category: [Linux, net]
-tags: [ZT, Linux, Tips, TCP/IP]
+category: Linux
+tags: [ZT, Tips, TCP/IP, net]
 ---
 {% include JB/setup %}
 

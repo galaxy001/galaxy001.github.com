@@ -4,8 +4,8 @@ layout: post
 slug: converting-fastq-to-fasta-with-simple-tools
 title: "Converting FASTQ to FASTA with simple tools"
 description: ""
-category: [BioInformatics, Other Scripts]
-tags: [Biology, Galaxy_Original, Linux, Tips]
+category: BioInformatics
+tags: [Biology, Galaxy_Original, Linux, Tips, Scripts]
 wordpress_id: '1150'
 ---
 {% include JB/setup %}

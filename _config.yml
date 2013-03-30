@@ -5,6 +5,8 @@ permalink: /:categories/:year:month:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 pygments: true
+
+# added by Galaxy
 paginate: 10
 
 # From https://help.github.com/articles/using-jekyll-with-pages#troubleshooting
