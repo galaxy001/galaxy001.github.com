@@ -8,6 +8,8 @@ For all usage and documentation please see: <http://jekyllbootstrap.com>
 
 ## Version
 
+*ALWAYS* refer to [plusjade/jekyll-bootstrap @ GitHub](https://github.com/plusjade/jekyll-bootstrap) for latest updates.
+
 0.3.0 - stable and versioned using [semantic versioning](http://semver.org/).
 
 **NOTE:** 0.3.0 introduces a new theme which is not backwards compatible in the sense it won't _look_ like the old version.
