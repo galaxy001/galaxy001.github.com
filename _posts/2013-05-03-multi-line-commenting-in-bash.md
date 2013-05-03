@@ -2,7 +2,7 @@
 layout: post
 date: 'Fri 2013-05-03 14:04:22 +0800'
 slug: "multi-line-commenting-in-bash"
-title: "Multi line commenting in BASH"
+title: "BASH中的多行注释"
 description: ""
 category: 
 tags: [Tips, BASH, ZT, heredoc, Galaxy]
