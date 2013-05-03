@@ -4,7 +4,7 @@ date: 'Fri 2013-05-03 15:02:50 +0800'
 slug: "hello-kernel"
 title: "Hello Kernel 内核模块编程简例"
 description: ""
-category: 
+category: Linux
 tags: [Linux, Kernel, Programming, C]
 ---
 {% include JB/setup %}
