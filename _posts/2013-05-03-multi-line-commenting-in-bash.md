@@ -5,7 +5,7 @@ slug: "multi-line-commenting-in-bash"
 title: "Multi line commenting in BASH"
 description: ""
 category: 
-tags: [Tips BASH ZT heredoc Galaxy]
+tags: [Tips, BASH, ZT, heredoc, Galaxy]
 ---
 {% include JB/setup %}
 
