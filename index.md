@@ -9,6 +9,12 @@ Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.ht
 
 Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
 
+## Writing instructions
+
+1. `rake post title="English title used for slug" tags="Tags, divided by, Comma"`
+2. Edit prompted file and set `title` to proper *Chinese* ones for ***real display***.
+3. `git add ./_posts/2013-05-03-that-post.md` or `rm` it to cancel.
+
 ## Update Author Attributes
 
 In `_config.yml` remember to specify your own data:
