@@ -65,3 +65,14 @@ oblige は、動詞 obliger の三人称単数現在形で、目的語を伴わ�
 图片: [Konachan.com - 50838 higashi_no_eden.jpg](http://konachan.com/post/show/50838/)
 
 ![http://konachan.com/image/28bb8ac4112c2c4b220b23e83e9a8b50/Konachan.com%20-%2050838%20higashi_no_eden.jpg](/assets/images/2013/Konachancom-50838-higashi_no_eden.jpg)
+
+## 嗯，……
+其实，搞这个是因为香港有个叫[artscow](http://www.artscow.com/?Ref=1593672)的公司，搞可定制图片的[鼠标垫](http://www.artscow.com/photo-gifts/mousepad/large-mousepad-160)和其他99美分的[东东](http://www.artscow.com/photo-gifts/99cents-gifts).
+
+2013年6月30日前，凭优惠码`Z099PLAYZW86S`都可以享受第一件$0.99,后面的$4.99的优惠。
+
+可惜每个帐号只能优惠一次，所谓的运费每件商品还分开算。
+
+Galaxy就是看到后面的4.99还是3.99（谁会记得那么清楚…）比较贵，打算分多个订单，结果发现反而更贵，于是乎只买了个鼠标垫……
+
+要是拿美元工资，Galaxy才不会在意那几美元的小钱呢，但，[5 USD在中国就是31块钱](https://www.google.com.hk/search?newwindow=1&safe=off&rlz=1C5CHFA_en__533__533&qscrl=1&q=5+usd+to+rmb&oq=5+usd+to+rmb&gs_l=serp.3..0i30j0i8i30l2.126561.126721.0.127519.3.3.0.0.0.0.173.173.0j1.1.0...0.0...1c.4.12.serp.rcQrGaji0CA)啊，要Galaxy花三十块运费买个小东西，感觉还是划不来呀……
