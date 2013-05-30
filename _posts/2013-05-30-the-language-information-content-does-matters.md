@@ -4,7 +4,7 @@ date: 'Thu 2013-05-30 18:18:06 +0800'
 slug: "the-language-information-content-does-matters"
 title: "语言的信息量还是很重要的"
 description: ""
-category: 
+category: daily
 tags: [Galaxy_Original, Sayings]
 ---
 {% include JB/setup %}
@@ -18,9 +18,13 @@ tags: [Galaxy_Original, Sayings]
 好吧，同样的话，用不同语言说会怎样呢？
 
 1.  This is a book that bula bula bulabula … .
+
 2.  是书也，形如－－，意如－－，－－－－。
+
 3.  这是一本书，它形态噼噼，意境噼噼，噼噼噼噼噼噼。
+
 4.  这是一本噼噼噼噼，噼噼噼噼，噼噼噼噼噼噼的书。
+
 5.  This is a bulaic bulaic bulabulaic book.
 
 这些说法，放在书面语中，反正眼球动下又不费劲，没多大区别。但，如果是口语，就有明显的区别。
