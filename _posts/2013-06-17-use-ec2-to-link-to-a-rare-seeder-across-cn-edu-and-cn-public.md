@@ -47,7 +47,8 @@ EC2的流量是按流出的计费，而我是96%进度，单缺EP03，所以差�
 	-rw-r--r-- 1 ec2-user ec2-user 4.8G Jun 17 12:29 Frozen Planet 2011 - EP03 Summer [BD 1920x1080 25.000fps AVC-yuv420p10 FLAC AC3 PGS Chap] - mawen1250.mkv
 	-rw-r--r-- 1 ec2-user ec2-user 4.3G Jun 17 10:15 Frozen Planet 2011 - EP04 Autumn [BD 1920x1080 25.000fps AVC-yuv420p10 FLAC AC3 PGS Chap] - mawen1250.mkv
 
-最后是结果，一下午就熬到99%，再花几天就能下完了！
+最后是结果，一下午就熬到99%（ Chunks:7319 / 7354 * 4194304 (35) ），
+再花几天就能下完了！
 
 
 加速结果留影：
