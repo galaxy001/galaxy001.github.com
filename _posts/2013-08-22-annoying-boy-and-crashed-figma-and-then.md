@@ -392,6 +392,7 @@ PS：事情发展到这个地步，各种言论的都会有。有人支持我，
 
 * http://www.douban.com/group/topic/42648046/ 最后还是私了，算是不错的结果
 * http://bbs.saraba1st.com/2b/thread-947740-1-1.html [生活] 如果是s1er，会如何面对熊孩子造成的3w宅物直接损失？
+* http://www.zhihu.com/question/21499091/answer/18457527 大家对这起熊孩子故意毁坏家中物品的事件怎么看？
 
 ## s1上一些讨论
 
