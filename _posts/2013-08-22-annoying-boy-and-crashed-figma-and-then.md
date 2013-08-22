@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 'Thu 2013-08-22 19:32:51 +0800'
-slug: "熊孩子破坏手办事件"
-title: "Annoying Boy and Crashed Figma and Then"
+slug: "annoying-boy-and-crashed-figma-and-then"
+title: "熊孩子破坏手办事件"
 description: ""
 category: History
 tags: [Galaxy, Story]
@@ -393,7 +393,7 @@ PS：事情发展到这个地步，各种言论的都会有。有人支持我，
 * http://www.douban.com/group/topic/42648046/ 最后还是私了，算是不错的结果
 * http://bbs.saraba1st.com/2b/thread-947740-1-1.html [生活] 如果是s1er，会如何面对熊孩子造成的3w宅物直接损失？
 * http://www.zhihu.com/question/21499091/answer/18457527 大家对这起熊孩子故意毁坏家中物品的事件怎么看？
-* http://bgm.tv/group/topic/26623 [zz] 去他妈的熊孩子 (renren)
+* http://bgm.tv/group/topic/26623 \[zz] 去他妈的熊孩子 (renren)
 
 ## s1上一些讨论
 
@@ -579,7 +579,7 @@ bandai的 同班三人课桌组合炒过一个700  加上翼猫x2 蜗牛 甜甜�
 
 ---
 
-@郑昀
+\@郑昀
 那起因手办全被分解、AKG K3003耳机被扔而起诉熊孩子的案子有后续进展了，律师已经在法院申请立案，要求赔偿耳机一万元、手办两万五千元、精神损失费五千元，豆瓣直播帖：http://t.cn/zQB2NcW，人人直播帖：http://t.cn/zQ3Hjbd
 
 几大反智平台强强联手
@@ -666,5 +666,3 @@ http://bbs.saraba1st.com/2b/thread-947740-1-1.html S1的讨论。
 ---
 
 <blockquote class="twitter-tweet"><p><a href="https://twitter.com/yeahwang">@yeahwang</a> <a href="https://twitter.com/HopeGundam">@HopeGundam</a> <a href="https://twitter.com/laoyang945">@laoyang945</a> 看完就一想法，只要给钱，干过啥都能从历史上抹去，后人想查连当事人都不提供资料。&#10;话说，都说日本人改历史教科书不好，咱们自己抹除甚至改写历史的事还少吗？&#10;&#10;好吧，我只是在发泄看不到原帖的郁闷。</p>&mdash; Yuuki Galaxy (@galaxy001) <a href="https://twitter.com/galaxy001/statuses/370394076941524992">August 22, 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
