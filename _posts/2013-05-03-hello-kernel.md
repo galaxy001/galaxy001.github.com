@@ -72,7 +72,7 @@ tags: [Linux, Kernel, Programming, C]
 
 ## 3.make
 
-完成上述两个文件后，在当前目录下运行`make`命令，就会生成`hello.ko文件，即模块目标文件。
+完成上述两个文件后，在当前目录下运行`make`命令，就会生成`hello.ko`文件，即模块目标文件。
 
 ## 4.`insmod`,`rmmod`和`dmesg`
 

@@ -27,14 +27,14 @@ To undo the joining of; separate.
 v.intr.
 To become separated.
 
-[Middle English disjoinen, from Old French desjoindre, from Latin disiungere : dis-, dis- + iungere, to join; see join.]
+\[Middle English disjoinen, from Old French desjoindre, from Latin disiungere : dis-, dis- + iungere, to join; see join.\]
 
 -----
 
 remorse - 悔恨。
 [Remorse](http://en.wikipedia.org/wiki/Remorse) is an emotional expression of personal regret felt by a person after he or she has committed an act which they deem to be shameful, hurtful, or violent.
 
-[Middle English remors, from Old French, from Medieval Latin remorsum, from neuter past participle of Latin remordre, to torment : re-, re- + mordre, to bite; see mer- in Indo-European roots.]
+\[Middle English remors, from Old French, from Medieval Latin remorsum, from neuter past participle of Latin remordre, to torment : re-, re- + mordre, to bite; see mer- in Indo-European roots.\]
 
 ## The famous line repeatedly spoken by Juiz
 "Noblesse Oblige",
@@ -58,7 +58,7 @@ The Oxford English Dictionary says that the term "suggests noble ancestry constr
 
 [日语wiki](http://ja.wikipedia.org/wiki/%E3%83%8E%E3%83%96%E3%83%AC%E3%82%B9%E3%83%BB%E3%82%AA%E3%83%96%E3%83%AA%E3%83%BC%E3%82%B8%E3%83%A5):
 
-ノブレス・オブリージュ（仏: noblesse oblige、フランス語発音: [nɔblɛs ɔbliʒ] ノブレッソブリージュ）とは、直訳すると「高貴さは（義務を）強制する」を意味し、日本語では「位高ければ徳高きを要す」などと訳される。一般的に財産、権力、社会的地位の保持には責任が伴うことを指す。一般的な用法ではないが、慇懃無礼あるいは偽善的な社会的責任について蔑視的に使われることもある。また、実際の歴史では、貴族などの特権と贅沢を正当化する隠れ蓑となった側面もある。
+ノブレス・オブリージュ（仏: noblesse oblige、フランス語発音: \[nɔblɛs ɔbliʒ\] ノブレッソブリージュ）とは、直訳すると「高貴さは（義務を）強制する」を意味し、日本語では「位高ければ徳高きを要す」などと訳される。一般的に財産、権力、社会的地位の保持には責任が伴うことを指す。一般的な用法ではないが、慇懃無礼あるいは偽善的な社会的責任について蔑視的に使われることもある。また、実際の歴史では、貴族などの特権と贅沢を正当化する隠れ蓑となった側面もある。
 oblige は、動詞 obliger の三人称単数現在形で、目的語を伴わない絶対用法である。名詞ではない。英語では、フランス語の綴りをそのまま英語風に読んだノーブレス・オブリージュ（英: noblesse oblige、英語発音: /nəʊˈblɛs əʊˈbliːʒ/ ナウブレス・アウブリージュ）のほかに、英訳・名詞化してノーブル・オブリゲーション（英: noble obligation、英語発音: /ˈnoubl ˌɑbləˈgeiʃən/ ノウブル・アブラゲイシャン）とも言う。
 
 ## 最后来个All in One的
@@ -76,3 +76,8 @@ oblige は、動詞 obliger の三人称単数現在形で、目的語を伴わ�
 Galaxy就是看到后面的4.99还是3.99（谁会记得那么清楚…）比较贵，打算分多个订单，结果发现反而更贵，于是乎只买了个鼠标垫……
 
 要是拿美元工资，Galaxy才不会在意那几美元的小钱呢，但，[5 USD在中国就是31块钱](https://www.google.com.hk/search?newwindow=1&safe=off&rlz=1C5CHFA_en__533__533&qscrl=1&q=5+usd+to+rmb&oq=5+usd+to+rmb&gs_l=serp.3..0i30j0i8i30l2.126561.126721.0.127519.3.3.0.0.0.0.173.173.0j1.1.0...0.0...1c.4.12.serp.rcQrGaji0CA)啊，要Galaxy花三十块运费买个小东西，感觉还是划不来呀……
+
+---
+
+话说，artscow的东西老早说发出来了，都两个多月还没收到，难道被EMS贪污了？
+等到10月1号，还不到就refund。
