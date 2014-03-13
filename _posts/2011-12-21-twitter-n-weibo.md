@@ -15,6 +15,10 @@ published: true
 
 尝试下直接转raw的。来自： https://github.com/moenayuki/SimpleGray/blob/234d565809dcd18396842fdd13c2602562ace4ef/_posts/2011-12-21-tt.markdown
 
+额，本地测试发现日期是会按文件头的`date`值来定的，`slug`没试，应该也是以声明的为准。没写才会默认从文件名取。
+
+<font color="navy">下面都是原文，咱啥都没改。</font>
+
 ###推特和国内服务的区别
 
 - 字数的限制
