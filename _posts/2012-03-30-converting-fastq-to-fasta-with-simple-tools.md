@@ -47,6 +47,7 @@ This is the fastest I've got, and I stuck it in my .bashrc file:
 It doesn't fail on the infrequent but not impossible quality lines that start with @... but does fail on wrapped FASTQ, if that's even legal (it exists though).
 
 另外有两个功能比较多的相关程序：
+
 <ul>
 	<li><a href="http://hannonlab.cshl.edu/fastx_toolkit/commandline.html#fastq_to_fasta_usage">fastq_to_fasta from FASTX-Toolkit (FASTQ/A short-reads pre-processing tools)</a></li>
 	<li><a href="http://prinseq.sourceforge.net/">prinseq (Easy and rapid quality control and data preprocessing)</a></li>
