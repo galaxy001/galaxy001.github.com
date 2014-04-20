@@ -4,7 +4,7 @@ title: "Jekyll on Windows"
 tagline: "每次想写东西都得先修Blog真是够了"
 description: ""
 category: Misc
-tags: [Windows, Blog Maintenance, Jekyll]
+tags: [Windows, Blog Maintenance, Jekyll, ZT]
 comments: true
 published: true
 ---
@@ -20,7 +20,7 @@ published: true
 - Pygments
 
 
-先从[这里](http://rubyinstaller.org/downloads/)安装Ruby和Devkit，安装完后到Devkit的目录下运行
+先从[rubyinstaller这里](http://rubyinstaller.org/downloads/)安装Ruby和Devkit，安装完后到Devkit的目录下运行
 
 	ruby dk.rb init
 
