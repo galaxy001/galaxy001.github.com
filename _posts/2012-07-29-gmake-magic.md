@@ -82,8 +82,56 @@ tags: [Make]
 ## 好复杂的赶脚有没有实例呢
 
 …………
+[source link](https://gist.github.com/ZephyrSL/3194416/)
 
-<script src="https://gist.github.com/3194416.js"> </script>
+{% highlight Makefile %}
+CC = g++
+EXECUTABLE = Datastructure_test
+SOURCES = Datastructure_test.cpp SPList.cpp
+# Put generated files into seperate directory
+BUILDDIR = build
+OBJECTS = $(addprefix $(BUILDDIR)/,$(SOURCES:.cpp=.o))
+DEPS = $(OBJECTS:.o=.d)
+
+# Switch of full output
+Q ?= @
+
+# user configuration
+# include config.mak
+
+# Adapt C flags for debug/optimized build
+ifdef NDEBUG
+CFLAGS += -O3 -DNDEBUG
+else
+CFLAGS += -O0 -g
+endif
+
+CFLAGS 		+= $(MY_CFLAGS)
+CPPFLAGS 	+= $(MY_CPPFLAGS)
+
+.PHONY: clean
+
+$(BUILDDIR)/$(EXECUTABLE) : $(OBJECTS)
+	$(CC) -o $@ $(OBJECTS)
+
+ifeq ($(findstring $(MAKECMDGOALS), clean),)
+-include $(DEPS)
+endif
+
+# %.d : %.c
+# 	$(CC) -M $< > $@
+
+$(BUILDDIR)/%.o : %.cpp
+	@echo "===> DEPEND $@"
+	$(Q)$(CC) $(CFLAGS) $(CPPFLAGS) -o $@ -c $<
+
+$(BUILDDIR)/%.d : %.cpp
+	@echo "===> COMPILE $@"
+	$(Q)$(CC) $(CFLAGS) $(CPPFLAGS) -MT $(@:.d=.o) -M $< > $@
+
+clean :
+	rm -f $(OBJECTS) $(EXECUTABLE)
+{% endhighlight %}
 
 * 引入了`config.mak`文件，用来分离放置用户自定义的选项
 * 因为`clean`不是文件，所以将其声明为`.PHONY`
