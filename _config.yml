@@ -12,6 +12,9 @@ paginate: 10
 safe: true
 lsi: false
 
+# https://help.github.com/articles/migrating-your-pages-site-from-maruku
+markdown: kramdown
+
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
