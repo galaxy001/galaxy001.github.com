@@ -3,7 +3,7 @@ layout: post
 title: "让Jekyll支持Latex"
 description: ""
 category: Blog
-tags: [Jekyll, Latex, Blog Maintenance]
+tags: [Jekyll, Latex, Blog Maintenance, ZT]
 ---
 {% include JB/setup %}
 

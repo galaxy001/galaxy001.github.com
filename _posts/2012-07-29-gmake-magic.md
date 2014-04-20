@@ -4,7 +4,7 @@ title: "Make的黑魔术咒文"
 tagline: "见习魔法师的Spellbook"
 description: ""
 category: Coding
-tags: [Make]
+tags: [Make, ZT]
 ---
 {% include JB/setup %}
 

@@ -4,7 +4,7 @@ title: "Typechecking tricks using macros in C"
 tagline:
 description: ""
 category: Coding
-tags: [C]
+tags: [C, ZT]
 comments: true
 ---
 {% include JB/setup %}
@@ -36,7 +36,32 @@ comments: true
 文本替换就是方便…
 
 最后就随手帖拯救懒人嗯…(disqus, jekyll和gist间的相性貌似很差的赶脚= =)
-	<script src="https://gist.github.com/4022951.js"> </script>
+[source link](https://gist.github.com/ZephyrSL/4022951#file-typechecking_macros-c)
+{% highlight C %}
+#include <stdio.h>
+
+#define min_t(type, x, y) ({                        \
+	type __min1 = (x);                      \
+	type __min2 = (y);                      \
+	__min1 < __min2 ? __min1: __min2; })
+
+/* generate warning if the types are unmatched: "comparison of distinct pointer types lacks a cast" */
+#define min(x, y) ({                                \
+	typeof(x) _min1 = (x);                  \
+	typeof(y) _min2 = (y);                  \
+	void) (&_min1 == &_min2);              \ 
+	_min1 < _min2 ? _min1 : _min2; })
+
+
+int main(int argc, char const *argv[])
+{
+  int a = 12;
+  unsigned b = 14;
+  printf("min_t: %d\n", min_t(int, a, b));
+  printf("min: %d\n", min(a, b));
+  return 0;
+}
+{% endhighlight %}
 
 EOF
 
