@@ -4,7 +4,7 @@ title: "Latency Numbers Every Programmer Should Know"
 tagline:
 description: ""
 category: Coding
-tags: [System]
+tags: [System, ZT]
 comments: true
 published: true
 ---
