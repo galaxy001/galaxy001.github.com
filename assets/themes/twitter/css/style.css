@@ -63,3 +63,13 @@
   background: #57A957;
   border: 1px solid #4c964d;
   color: #FFF; }
+
+/* Added by Galaxy */
+body div.content {}
+    body div.content code.has-jax {
+        font: inherit;
+        font-size: 100%;
+        background: inherit;
+        border: inherit;
+        color: #000000;
+    }

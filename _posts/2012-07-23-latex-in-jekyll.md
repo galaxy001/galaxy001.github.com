@@ -13,10 +13,36 @@ tags: [Jekyll, Latex, Blog Maintenance]
 三步轻松解决，环保节能无公害(大概):
 
 1. 在_layouts/default.html内加入以下内容
-    <script src="https://gist.github.com/3167864.js"> </script>
+{% highlight JavaScript %}
+<!-- MathJax Section -->
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+          tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+          }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+{% endhighlight %}
 
 2. 上一步已经加入了has-jax字符串，接下来再更改style.css
-    <script src="https://gist.github.com/3167912.js"> </script>
+{% highlight css %}
+body div.content {}
+    body div.content code.has-jax {
+        font: inherit;
+        font-size: 100%;
+        background: inherit;
+        border: inherit;
+        color: #000000;
+    }
+{% endhighlight %}
 
 3. 然后就没有什么事了…
     `\[
