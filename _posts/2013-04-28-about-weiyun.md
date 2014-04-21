@@ -3,7 +3,7 @@ layout: post
 title: "关于微云下载的那点事"
 date: 2013-04-28 21:31
 comments: true
-tags: cookies how-to
+tags: [cookies, how-to, ZT]
 ---
 
 貌似腾讯公司出品了一个叫[微云](http://www.weiyun.com/index.html)的东东,说实话,要不是基家上某人告诉我我还真不知道==
@@ -16,7 +16,7 @@ tags: cookies how-to
 看着就想吐... 于是换了一个思路,F12开启chromium的调试工具,在Network面板下查看网页到底和服务器发生了哪些交互
 chromium的开发工具非常明确的红色的标注了发生POST请求的链接.一眼就看到了.[测试用下载链接](http://www.weiyun.com/web/outlink.html?Q69+qVhF33RXX+jAvhRil4kmLW5GIZRW8Zd13MWsUyvzpcDLunyFPxcqaLdUNtq5FfLp9Oj65Xr2XxTn298qsOWHWHqVdGuP7q1xMT4Do/y34dP00q4H7gpr94udJr/d2H23l0QGIKteptOEY1bTYLwkc+BRRdYEFvNb36XnUMBrS8pMf8RqoLJiAPrbXgYeBFvAwJu13QPHiQOe2lxS2i+V7/UDRpJr2qz8FqnOTHSQhaNXD+8s7uZIyaWH8INMc1Ls9Ay1XOc=)
 在这个页面载入的时候可以很清楚的看到
-![POST请求](https://lh4.googleusercontent.com/-ucFWlUgjt48/UX3Na09k-EI/AAAAAAAATTs/0EQyyTSdvlU/s2560/2013-04-29-093107_1365x566_scrot.png)
+![POST请求 https://lh4.googleusercontent.com/-ucFWlUgjt48/UX3Na09k-EI/AAAAAAAATTs/0EQyyTSdvlU/s2560/2013-04-29-093107_1365x566_scrot.png](/assets/images/2013/2013-04-29-093107_1365x566_scrot.png)
 网页对http://web.cgi.weiyun.com/wy_web.fcg这个网址进行POST请求,提交的表单是个json对象
 
 		{
@@ -63,7 +63,7 @@ url明显就是网址上问号后面的参数,我就不赘述了.关于token,仔
 
 看来做的还是不错的,用cookies生成token,但是你的"skey"的cookies是空的要闹哪样 == 基本上token就是个定值 `"4d3754f563ad04a56fece81bbcc83302"`
 接下来看返回回来的json对象
-![POST返回的JSON对象](https://lh3.googleusercontent.com/-k4YDmt1pE5U/UX3Qm4FtssI/AAAAAAAATUY/yYOPPMky_CU/s2560/2013-04-29-094459_1363x571_scrot.png)
+![POST返回的JSON对象 https://lh3.googleusercontent.com/-k4YDmt1pE5U/UX3Qm4FtssI/AAAAAAAATUY/yYOPPMky_CU/s2560/2013-04-29-094459_1363x571_scrot.png](/assets/images/2013/2013-04-29-094459_1363x571_scrot.png)
 
 	{
 		"rsp_body": {
@@ -97,7 +97,7 @@ url明显就是网址上问号后面的参数,我就不赘述了.关于token,仔
 "/ftn_handler/"+json.rsp_body.dl_encrypt_url+"/"+json.rsp_body.realnm;  
 这就是根据JSON拼接出来的下载链接
 接下来的问题就是cookies跨越问题了,点击页面上的下载按钮可以发现,页面与服务器又发生了交互
-![](https://lh4.googleusercontent.com/-0p2qXxU_V2U/UX3SepoENOI/AAAAAAAATU0/6fgUOyaR6FI/s2560/2013-04-29-095256_1363x569_scrot.png)
+![https://lh4.googleusercontent.com/-0p2qXxU_V2U/UX3SepoENOI/AAAAAAAATU0/6fgUOyaR6FI/s2560/2013-04-29-095256_1363x569_scrot.png](/assets/images/2013/2013-04-29-095256_1363x569_scrot.png)
 
 页面向http://web.weiyun.qq.com/php/downloadCheck.php提交了downloadn=FTN5K&downloadv=8eb5b2ee这个正是cookies的键值对,后面的callback是JQUery回调的参数
 ,无视就可以了,关键是服务器返回的  
