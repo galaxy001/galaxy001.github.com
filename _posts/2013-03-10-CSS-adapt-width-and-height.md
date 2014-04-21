@@ -3,7 +3,7 @@ layout: post
 title: "关于CSS解决高度自适应和宽度自适应的问题"
 date: 2013-03-10 19:09
 comments: true
-tags: CSS
+tags: [CSS, ZT]
 ---
 
 今天在做一个地图的web应用,这是个大坑...首先开始设计首页,于是开始山寨谷歌地图了 =.=
@@ -23,5 +23,5 @@ tags: CSS
 同样可以设置高度为height: -webkit-calc(100% - 142px);
 另外一种方法是把div设置成 position: absolute;脱离文档流,然后设置top:142px; bottom:0px;即可
 另外附上截图:
-![](https://lh6.googleusercontent.com/-9ChxAWRUJgg/UTxvXThY7dI/AAAAAAAARAw/Y3huY7wxMc8/s918/2013-03-10-193136_1366x768_scrot.png)
-![](https://lh3.googleusercontent.com/-kIjIH-kxSGo/UTxvXEI2L-I/AAAAAAAARA4/UP_MerAyvSE/s918/2013-03-10-193130_1366x768_scrot.png)
+![https://lh6.googleusercontent.com/-9ChxAWRUJgg/UTxvXThY7dI/AAAAAAAARAw/Y3huY7wxMc8/s918/2013-03-10-193136_1366x768_scrot.png](/assets/images/2013/2013-03-10-193136_1366x768_scrot.png)
+![https://lh3.googleusercontent.com/-kIjIH-kxSGo/UTxvXEI2L-I/AAAAAAAARA4/UP_MerAyvSE/s918/2013-03-10-193130_1366x768_scrot.png](/assets/images/2013/2013-03-10-193130_1366x768_scrot.png)
