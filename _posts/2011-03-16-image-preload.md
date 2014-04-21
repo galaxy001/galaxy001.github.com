@@ -28,6 +28,7 @@ https://github.com/tuupola/jquery_lazyload
 ###Frequently used Techniques（惯用伎俩）
 
 有两种惯用伎俩实现图片预加载：
+
 ####Css sprites
 Css sprites有效限制了页面上的HTTP请求数，所有的小图片被拼在了一张大图片上，然后通过CSS来定位相应元素。
 但有一个缺点，只有刚开始时（页面第一次载入时）出现的图片会被影响到。其他那些动态载入、计划稍后呈现的图片不会被加载，在此产生了一个延迟。所以这个技术的目标与静态网站一致，大大降低图片数量。
