@@ -23,3 +23,7 @@ tags: Joke, ACG
 
 额，文字的说法是“umbrella corporation logo on his sides -lol”。
 教宗先生的介绍见[wiki](http://en.wikipedia.org/wiki/Pope_Benedict_XVI)。
+
+顺便，[图片配文](http://torisokoloff.blogspot.com/2013/02/pope-benedict-xvi-to-resign-on-feb-28.html)在blogspot上有。是说他宣布病退的：“Pope Benedict XVI To Resign On Feb. 28 Due To Health Concerns”。<br>
+话说，读那篇博客时感觉这个标题好像有些对不住那位退休老先生，不过，公众人物不就是通过民众的关注来活动的么？Galaxy现在谈到他，正是扩大的的影响，使他能接收到更多的信仰。<br>
+到头来，这样还是对他有好处的嘛。作为以此谋生的人物，被人谈论是很平常的状态，没人谈论才是要命的呢。
