@@ -97,3 +97,9 @@ weibo的「评论」和「转发」功能都可以留下评论，但**评论**�
 
 关于推特删推的效果，见图：
 ![This Tweet is unavailable.](/assets/images/2015/TwitterDeleted.png)
+
+话说rMBP下用`Awesome Screenshot`截图，明明框的是`600x670`，结果保存后是`1200x1340`。果然是大家都默认放大两倍么？
+
+查了下，HiDPI模式下，即使是`More Space`的`1920x1200`，显卡也是按照两倍的`3840x2400`来处理。而非物理上的`2880x1800`。[出处](https://forum.parallels.com/threads/force-native-resolution-in-windows-2880x1800-on-rmbp-15-with-more-space.299398/#post-723471):
+
+> You can use SwitchResX to create scaled resolutions that are larger than your monitor's native resolution. For example, the MacBook Pro includes a scaled resolution of 3840 x 2400 even though the display is only 2880 x 1800. 3840 x 2400 allows a HiDPI mode of 1920 x 1200.
