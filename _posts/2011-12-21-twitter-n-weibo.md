@@ -94,4 +94,4 @@ weibo的「评论」和「转发」功能都可以留下评论，但**评论**�
 现在官方的`RT`可以自动附加`/status/`链接，完全可以点RT后，手工附加RT的内容。
 
 关于推特删推的效果，见图：
-![This Tweet is unavailable.](assets/images/2015/TwitterDeleted.png)
+![This Tweet is unavailable.](/assets/images/2015/TwitterDeleted.png)
