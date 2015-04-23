@@ -13,7 +13,8 @@ tags: ZT, Novel
 
 [【同人小说版文字游戏】三体4（地球往事4)---弱者之歌](http://tieba.baidu.com/p/3604071540)
 
-作者：
+作者ID：
+
 * [火星叔叔厉风](http://tieba.baidu.com/home/main?un=%E7%81%AB%E6%98%9F%E5%8F%94%E5%8F%94%E5%8E%89%E9%A3%8E&ie=utf-8)
 * [厉风](http://tieba.baidu.com/home/main?un=%E5%8E%89%E9%A3%8E&ie=utf-8&fr=pb)
 
