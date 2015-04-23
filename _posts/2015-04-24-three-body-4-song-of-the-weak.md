@@ -17,7 +17,9 @@ tags: ZT, Novel
 
 <font color="navy">注：在“197楼 2015-03-22 05:51”，作者描述了中国历史以来的的政治体制，作为在中国长大的人，Galaxy读了感觉会被百度贴吧和谐，是以备份之。</font>
 
-原著：[三体/The Three-Body Problem](http://en.wikipedia.org/wiki/The_Three-Body_Problem)
+The plain text of the current post have been backuped as `_drafts/tb4.txt`.
+
+原著：[三体 / The Three-Body Problem](http://en.wikipedia.org/wiki/The_Three-Body_Problem)
 
 The trilogy comprises:
 
