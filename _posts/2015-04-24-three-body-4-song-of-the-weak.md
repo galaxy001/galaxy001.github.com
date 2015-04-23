@@ -17,6 +17,16 @@ tags: ZT, Novel
 
 <font color="navy">注：在“197楼 2015-03-22 05:51”，作者描述了中国历史以来的的政治体制，作为在中国长大的人，Galaxy读了感觉会被百度贴吧和谐，是以备份之。</font>
 
+原著：[三体/The Three-Body Problem](http://en.wikipedia.org/wiki/The_Three-Body_Problem)
+
+The trilogy comprises:
+
+* 三体 (Three Body), serialized in Science Fiction World in 2006, winner of the Galaxy Award 2006. Published in China in 2008 and in English by Tor Books in 2014 as The Three-Body Problem, translated by Ken Liu.
+* 黑暗森林 (The Dark Forest), 2008
+* 死神永生 (Death's End), 2010
+
+---
+
 1楼 2015-02-26 02:43
 
 ![](/assets/images/2015/1ofPlaned.jpg)
