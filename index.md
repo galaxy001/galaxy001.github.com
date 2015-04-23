@@ -15,6 +15,11 @@ Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllb
 2. Edit prompted file and set `title` to proper *Chinese* ones for ***real display***.
 3. `git add ./_posts/2013-05-03-that-post.md` or `rm` it to cancel.
 
+## Tips
+
+* `![](/assets/images/2015/1ofPlaned.jpg)`
+* `<font color="navy">注:</font>`
+
 ## Update Author Attributes
 
 In `_config.yml` remember to specify your own data:
