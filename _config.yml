@@ -15,6 +15,10 @@ lsi: false
 # https://help.github.com/articles/migrating-your-pages-site-from-maruku
 markdown: kramdown
 
+# http://jekyllrb.com/docs/configuration/#markdown-options
+kramdown:
+  input: GFM
+
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
