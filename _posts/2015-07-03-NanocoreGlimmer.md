@@ -17,6 +17,7 @@ iframe内的源文件为[http://tianyi.jp/etc/youtube/glimmer.html](/assets/wp-u
 
 大概的代码是：
 
+    <iframe src="http://tianyi.jp/etc/youtube/glimmer.html" width="690" height="480" frameborder="0" allowfullscreen=""> </iframe>
 	var lyrics = [
 		0,	"「Glimmer」", 
 		2000,	"",
@@ -48,6 +49,8 @@ iframe内的源文件为[http://tianyi.jp/etc/youtube/glimmer.html](/assets/wp-u
 
 
 那篇博客是：[中国アニメブログ ちゃにめ！](http://chinanime.blog.fc2.com/) 的 [「Glimmer」 中国アニメ「納米核心 NANO CORE」の主題歌　歌詞と日本語訳 【kors k X 祈inory】](http://chinanime.blog.fc2.com/blog-entry-558.html), 内容如下：
+
+![Glimmer 作詞沈病娇 作曲kors k 歌手祈Inory](/assets/images/2015/NanocoreGlimmer.ap61.jpg)
 
 中国フル3DCGアニメ「纳米核心 NANO CORE」のオープニングテーマ曲「Glimmer」 
 
