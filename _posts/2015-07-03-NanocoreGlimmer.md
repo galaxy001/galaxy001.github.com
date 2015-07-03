@@ -12,7 +12,6 @@ tags: ACG, Galaxy, Google, API
 额，懒，直接转自己的推文……
 
 <blockquote class="twitter-tweet" lang="en"><p lang="zh" dir="ltr">纳米核心7出了，于是搜索下，发现某日本动漫博客发现它竟然有网页外挂字幕。&#10;惊讶之余，看源码，找到iframe：<a href="/assets/wp-uploads/2015/glimmer.html">http://tianyi.jp/etc/youtube/glimmer.html</a>&#10;用的是YouTube的player.getCurrentTime。&#10;&#10;嘛，谷歌开放API就是好。</p>&mdash; Yuuki Galaxy (@galaxy001) <a href="https://twitter.com/galaxy001/status/616842656727986176">July 3, 2015</a></blockquote>
-###### <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 iframe内的源文件为[http://tianyi.jp/etc/youtube/glimmer.html](/assets/wp-uploads/2015/glimmer.html)，我下面用的是修改框架尺寸为720p的版本。
 
@@ -52,7 +51,7 @@ iframe内的源文件为[http://tianyi.jp/etc/youtube/glimmer.html](/assets/wp-u
 
 中国フル3DCGアニメ「纳米核心 NANO CORE」のオープニングテーマ曲「Glimmer」 
 
-<iframe src="/assets/wp-uploads/2015/glimmer720.html"> </iframe>
+<iframe src="/assets/wp-uploads/2015/glimmer720.html" width="1290" height="800" style="display:block; margin: 0 auto;"> </iframe>
 
 
 曲名：Glimmer
