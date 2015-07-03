@@ -2,8 +2,8 @@
 layout: post
 date: 'Fri 2015-07-03 14:15:59 +0800'
 slug: "NanocoreGlimmer"
-title: "“Nanocore OP Glimmer & YouTube API Lyrics"
-description: ""
+title: "納米核心Nanocore主題歌Glimmer & 用YouTube API做网页外挂字幕"
+description: "Nanocore OP Glimmer and YouTube API Lyrics"
 category: 
 tags: ACG, Galaxy, Google, API
 ---
@@ -13,9 +13,23 @@ tags: ACG, Galaxy, Google, API
 
 <blockquote class="twitter-tweet" lang="en"><p lang="zh" dir="ltr">纳米核心7出了，于是搜索下，发现某日本动漫博客发现它竟然有网页外挂字幕。&#10;惊讶之余，看源码，找到iframe：<a href="/assets/wp-uploads/2015/glimmer.html">http://tianyi.jp/etc/youtube/glimmer.html</a>&#10;用的是YouTube的player.getCurrentTime。&#10;&#10;嘛，谷歌开放API就是好。</p>&mdash; Yuuki Galaxy (@galaxy001) <a href="https://twitter.com/galaxy001/status/616842656727986176">July 3, 2015</a></blockquote>
 
-iframe内的源文件为[http://tianyi.jp/etc/youtube/glimmer.html](/assets/wp-uploads/2015/glimmer.html)，我下面用的是修改框架尺寸为720p的版本。
+iframe内的源文件为[http://tianyi.jp/etc/youtube/glimmer.html](/assets/wp-uploads/2015/glimmer.html)，我下面用的是修改框架尺寸为[720p的版本](/assets/wp-uploads/2015/glimmer720.html)。
 
-大概的代码是：
+	$ diff assets/wp-uploads/2015/glimmer*
+	7,8c7,8
+	<          #playerbox { width:640; height:390; margin-bottom:10px; }
+	<          #status { width:640px; height:3em; margin-bottom:10px; }
+	---
+	>          #playerbox { width:1280; height:750; margin-bottom:10px; }
+	>          #status { width:1280px; height:3em; margin-bottom:10px; }
+	82,83c82,83
+	<                         width: '640',
+	<                         height: '390',
+	---
+	>                         width: '1280',
+	>                         height: '750',
+
+调用YouTube API大概的代码是：
 
     <iframe src="http://tianyi.jp/etc/youtube/glimmer.html" width="690" height="480" frameborder="0" allowfullscreen=""> </iframe>
 	var lyrics = [
