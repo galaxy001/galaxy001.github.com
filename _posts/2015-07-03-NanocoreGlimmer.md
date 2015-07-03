@@ -17,7 +17,7 @@ tags: ACG, Galaxy, Google, API
 iframe内的源文件为[http://tianyi.jp/etc/youtube/glimmer.html](/assets/wp-uploads/2015/glimmer.html)，我下面用的是修改框架尺寸为720p的版本。
 
 大概的代码是：
-```
+
 	var lyrics = [
 		0,	"「Glimmer」", 
 		2000,	"",
@@ -29,9 +29,8 @@ iframe内的源文件为[http://tianyi.jp/etc/youtube/glimmer.html](/assets/wp-u
 		3040,	"",
 		6940,	"希望を紡ぎだしてゆく",
 		7450,	"",
-,
-		1000000,	"", 
-
+		,
+		1000000,	"",
 	];
     var getStatus=function(){
 		var current_time=player.getCurrentTime()*100+offset;
@@ -44,11 +43,9 @@ iframe内的源文件为[http://tianyi.jp/etc/youtube/glimmer.html](/assets/wp-u
 			lyrics_count++;
 		}
 		$("#status").html(lyrics[lyrics_count*2+1]);
-//		$("#time").html(Math.round(current_time));
+		//$("#time").html(Math.round(current_time));
 
     }
-
-```
 
 
 那篇博客是：[中国アニメブログ ちゃにめ！](http://chinanime.blog.fc2.com/) 的 [「Glimmer」 中国アニメ「納米核心 NANO CORE」の主題歌　歌詞と日本語訳 【kors k X 祈inory】](http://chinanime.blog.fc2.com/blog-entry-558.html), 内容如下：
@@ -68,34 +65,34 @@ iframe内的源文件为[http://tianyi.jp/etc/youtube/glimmer.html](/assets/wp-u
 四散空洞眼眸铸就了冷漠与隔阂
 时代的起源来自谁埋下的因果
 尚锐利的轮廓 凝视着别闪躲
-<font color="#0066FF">魂は逃れられない運命の束縛に囚われ
-四散した空虚な瞳は冷酷と隔たりを作り上げた
-時代は一体誰が仕掛けた因果によって動いているのだろうか
+<font color="#0066FF">魂は逃れられない運命の束縛に囚われ<br>
+四散した空虚な瞳は冷酷と隔たりを作り上げた<br>
+時代は一体誰が仕掛けた因果によって動いているのだろうか<br>
 まだ鋭利なその輪郭　目を逸らさずに受け止めて</font>
 
 重塑的自我 扭曲对与错
 星辰已陨殁 剩微芒闪烁
 分秒停在此刻 吞噬或存活
 无惧挣脱
-<font color="#0066FF">再構築された自我は　是と非を捻じ曲げ
-星々は微かな煌きを残して燃え尽きていった
-僅かに静止した時間のなかで　呑み込むのか、或いは生き残るのか
+<font color="#0066FF">再構築された自我は　是と非を捻じ曲げ<br>
+星々は微かな煌きを残して燃え尽きていった<br>
+僅かに静止した時間のなかで　呑み込むのか、或いは生き残るのか<br>
 恐れることなく切り抜けろ</font>
 
 擦拭发烫信仰 伴随痛楚 跨越时间屏障
 隐匿的情绪 却在瞬间肆意冲撞
 舍弃繁重捆绑 不屑回望 曾经狼狈模样
 还能否紧握 手心残余梦想
-<font color="#0066FF">熱を帯びる信念を拭い　苦痛を伴いながらも　時間の障壁を乗り越え
-押し殺していた感情　この瞬間思いのままに解き放て
-ふり返るにも値しない　脆弱だったかつての自分の姿など捨て去り
+<font color="#0066FF">熱を帯びる信念を拭い　苦痛を伴いながらも　時間の障壁を乗り越え<br>
+押し殺していた感情　この瞬間思いのままに解き放て<br>
+ふり返るにも値しない　脆弱だったかつての自分の姿など捨て去り<br>
 手のひらに余韻が残る夢は　まだ掴むことが出来るのだろうか</font>
 
 未知的彼方 谁点亮 被人遗忘的曙光
 拾起沿途散落的骄傲
 汇成希望
-<font color="#0066FF">まだ見ぬかなたで　忘れられていた夜明けの光を灯しているのは誰？
-道端に散り落ちた誇りを拾い集め
+<font color="#0066FF">まだ見ぬかなたで　忘れられていた夜明けの光を灯しているのは誰？<br>
+道端に散り落ちた誇りを拾い集め<br>
 希望を紡ぎだしてゆく</font>
 
 
