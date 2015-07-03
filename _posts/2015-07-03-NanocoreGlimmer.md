@@ -2,7 +2,7 @@
 layout: post
 date: 'Fri 2015-07-03 14:15:59 +0800'
 slug: "NanocoreGlimmer"
-title: "納米核心Nanocore主題歌Glimmer & 用YouTube API做网页外挂字幕"
+title: "纳米核心Nanocore主题歌Glimmer & 用YouTube API做网页外挂字幕"
 description: "Nanocore OP Glimmer and YouTube API Lyrics"
 category: 
 tags: ACG, Galaxy, Google, API
