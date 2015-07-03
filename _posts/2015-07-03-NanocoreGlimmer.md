@@ -51,7 +51,7 @@ iframe内的源文件为[http://tianyi.jp/etc/youtube/glimmer.html](/assets/wp-u
 
 中国フル3DCGアニメ「纳米核心 NANO CORE」のオープニングテーマ曲「Glimmer」 
 
-<iframe src="/assets/wp-uploads/2015/glimmer720.html" width="1290" height="800" style="display:block; margin: 0 auto;"> </iframe>
+<iframe src="/assets/wp-uploads/2015/glimmer720.html" width="1282" height="800" frameborder="0"> </iframe>
 
 
 曲名：Glimmer
