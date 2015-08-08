@@ -27,11 +27,12 @@ Since the contents mean more than the cover, thus no time spent on this cover.
 
 * Markdown 语法 (简体中文版)
 
-   * [本地镜像](/etc/Markdown-Syntax-CN/)  
-```bash
+   * [本地镜像](/etc/Markdown-Syntax-CN/)
+
+    ```bash
 git subtree add --prefix=etc/Markdown-Syntax-CN https://gitcafe.com/riku/Markdown-Syntax-CN.git master
 git subtree pull --prefix=etc/Markdown-Syntax-CN https://gitcafe.com/Pause_J/Markdown-Syntax-CN.git master
-```
+    ```
 
    * [繁体中文版 Markdown 語法說明中文版](https://github.com/othree/markdown-syntax-zhtw/blob/master/syntax.md)
 
