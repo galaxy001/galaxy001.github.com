@@ -31,7 +31,7 @@ iframe内的源文件为[http://tianyi.jp/etc/youtube/glimmer.html](/assets/wp-u
 
 调用YouTube API大概的代码是：
 
-```` JavaScript
+````JavaScript
 <iframe src="http://tianyi.jp/etc/youtube/glimmer.html" width="690" height="480" frameborder="0" allowfullscreen=""> </iframe>
 	
 var lyrics = [
@@ -50,7 +50,7 @@ var lyrics = [
 ];
 var getStatus=function(){
 	var current_time=player.getCurrentTime()*100+offset;
-
+	
 	if(current_time < lyrics[lyrics_count*2]) {
 		lyrics_count=0;
 	}
