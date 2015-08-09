@@ -13,11 +13,16 @@ safe: true
 lsi: false
 
 # https://help.github.com/articles/migrating-your-pages-site-from-maruku
-markdown: kramdown
+#markdown: kramdown
+markdown: rdiscount
 
 # http://jekyllrb.com/docs/configuration/#markdown-options
-kramdown:
-  input: GFM
+#kramdown:
+#  input: GFM
+rdiscount:
+  extensions: [smart]
+
+timezone: Asia/Hong_Kong
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
