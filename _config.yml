@@ -20,7 +20,8 @@ markdown: rdiscount
 #kramdown:
 #  input: GFM
 rdiscount:
-  extensions: [smart]
+  extensions: [smart, footnotes, generate_toc, autolink]
+  toc_token: "!TOC"
 
 timezone: Asia/Hong_Kong
 
