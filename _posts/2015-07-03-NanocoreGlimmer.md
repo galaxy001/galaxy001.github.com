@@ -31,36 +31,36 @@ iframe内的源文件为[http://tianyi.jp/etc/youtube/glimmer.html](/assets/wp-u
 
 调用YouTube API大概的代码是：
 
-    <iframe src="http://tianyi.jp/etc/youtube/glimmer.html" width="690" height="480" frameborder="0" allowfullscreen=""> </iframe>
-	var lyrics = [
-		0,	"「Glimmer」", 
-		2000,	"",
-		2100,	"魂は逃れられない運命の束縛に囚われ",
-		2420,	"",
-		2440,	"四散した空虚な瞳は冷酷と隔たりを作り上げた",
-		2740,	"",
-		2760,	"時代は一体誰が仕掛けた因果によって動いているのだろうか",
-		3040,	"",
-		6940,	"希望を紡ぎだしてゆく",
-		7450,	"",
-		,
-		1000000,	"",
-	];
-    var getStatus=function(){
-		var current_time=player.getCurrentTime()*100+offset;
+```JavaScript
+<iframe src="http://tianyi.jp/etc/youtube/glimmer.html" width="690" height="480" frameborder="0" allowfullscreen=""> </iframe>
+	
+var lyrics = [
+	0,	"「Glimmer」", 
+	2000,	"",
+	2100,	"魂は逃れられない運命の束縛に囚われ",
+	2420,	"",
+	2440,	"四散した空虚な瞳は冷酷と隔たりを作り上げた",
+	2740,	"",
+	2760,	"時代は一体誰が仕掛けた因果によって動いているのだろうか",
+	3040,	"",
+	6940,	"希望を紡ぎだしてゆく",
+	7450,	"",
+	,
+	1000000,	"",
+];
+var getStatus=function(){
+	var current_time=player.getCurrentTime()*100+offset;
 
-		if(current_time < lyrics[lyrics_count*2]) {
-			lyrics_count=0;
-		}
-
-		while(current_time > lyrics[lyrics_count*2+2] && lyrics_count<lyrics_count_end) {
-			lyrics_count++;
-		}
-		$("#status").html(lyrics[lyrics_count*2+1]);
-		//$("#time").html(Math.round(current_time));
-
-    }
-
+	if(current_time < lyrics[lyrics_count*2]) {
+		lyrics_count=0;
+	}
+	while(current_time > lyrics[lyrics_count*2+2] && lyrics_count<lyrics_count_end) {
+		lyrics_count++;
+	}
+	$("#status").html(lyrics[lyrics_count*2+1]);
+	//$("#time").html(Math.round(current_time));
+}
+```
 
 那篇博客是：[中国アニメブログ ちゃにめ！](http://chinanime.blog.fc2.com/) 的 [「Glimmer」 中国アニメ「納米核心 NANO CORE」の主題歌　歌詞と日本語訳 【kors k X 祈inory】](http://chinanime.blog.fc2.com/blog-entry-558.html), 内容如下：
 
