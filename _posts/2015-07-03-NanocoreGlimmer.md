@@ -31,7 +31,7 @@ iframe内的源文件为[http://tianyi.jp/etc/youtube/glimmer.html](/assets/wp-u
 
 调用YouTube API大概的代码是：
 
-```JavaScript
+```` JavaScript
 <iframe src="http://tianyi.jp/etc/youtube/glimmer.html" width="690" height="480" frameborder="0" allowfullscreen=""> </iframe>
 	
 var lyrics = [
@@ -60,7 +60,7 @@ var getStatus=function(){
 	$("#status").html(lyrics[lyrics_count*2+1]);
 	//$("#time").html(Math.round(current_time));
 }
-```
+````
 
 那篇博客是：[中国アニメブログ ちゃにめ！](http://chinanime.blog.fc2.com/) 的 [「Glimmer」 中国アニメ「納米核心 NANO CORE」の主題歌　歌詞と日本語訳 【kors k X 祈inory】](http://chinanime.blog.fc2.com/blog-entry-558.html), 内容如下：
 
