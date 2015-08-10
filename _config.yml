@@ -13,11 +13,17 @@ safe: true
 lsi: false
 
 # https://help.github.com/articles/migrating-your-pages-site-from-maruku
-markdown: kramdown
+#markdown: kramdown
+markdown: rdiscount
 
 # http://jekyllrb.com/docs/configuration/#markdown-options
-kramdown:
-  input: GFM
+#kramdown:
+#  input: GFM
+rdiscount:
+  extensions: [smart, footnotes, generate_toc, autolink]
+  toc_token: "!TOC"
+
+timezone: Asia/Hong_Kong
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
@@ -39,7 +45,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://galaxy001.github.io
+production_url : https://galaxy001.github.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #

@@ -23,6 +23,25 @@ Since the contents mean more than the cover, thus no time spent on this cover.
 </ul>
 <a href="archive.html"><span class="grey">...SEE ALL</span></a>
 
+## Markdown 
+
+* Markdown 语法 (简体中文版)
+
+   * [本地镜像](/etc/Markdown-Syntax-CN/)
+
+    ```bash
+git subtree add --prefix=etc/Markdown-Syntax-CN https://gitcafe.com/riku/Markdown-Syntax-CN.git master
+git subtree pull --prefix=etc/Markdown-Syntax-CN https://gitcafe.com/Pause_J/Markdown-Syntax-CN.git master
+    ```
+
+   * [繁体中文版 Markdown 語法說明中文版](https://github.com/othree/markdown-syntax-zhtw/blob/master/syntax.md)
+
+   * [英文原版](http://daringfireball.net/projects/markdown/syntax), 及其[源代码](http://daringfireball.net/projects/markdown/syntax.text)
+
+* GitHub 官方Markdown指南 [Mastering Markdown](https://guides.github.com/features/mastering-markdown/#examples)
+
+    https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown
+
 
 
 ## Old programming tips
