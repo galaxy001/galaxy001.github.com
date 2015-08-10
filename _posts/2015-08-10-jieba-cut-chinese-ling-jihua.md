@@ -2,7 +2,7 @@
 layout: post
 date: 'Mon 2015-08-10 18:47:28 +0800'
 slug: "jieba-cut-chinese-ling-jihua"
-title: "\“结巴\”中文分词 与 \“令完成已经完成令计划的计划\”"
+title: "［结巴］中文分词 与［令完成已经完成令计划的计划］"
 description: ""
 category: 
 tags: Programming, Joke
