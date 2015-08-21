@@ -7,6 +7,8 @@ categories:
 keywords: iOS 的并发编程模型, iOS, 并发编程模型, 并发编程, Operation Queues, Operation Queue, Operation, Queues, Queue, GCD
 ---
 
+转自 https://github.com/leichunfeng/leichunfeng.github.io/blob/source/source/_posts/2015-07-29-ios-concurrency-programming-operation-queues.markdown
+
 现如今移动设备也早已经进入了多核心 `CPU` 时代，并且随着时间的推移，`CPU` 的核心数只会增加不会减少。而作为软件开发者，我们需要做的就是尽可能地提高应用的并发性，来充分利用这些多核心 `CPU` 的性能。在 iOS 开发中，我们主要可以通过 Operation Queues、Dispatch Queues 和 Dispatch Sources 来提高应用的并发性。本文将主要介绍 Operation Queues 的相关知识，另外两个属于 Grand Central Dispatch（以下正文简称 `GCD` ）的范畴，将会在后续的文章中进行介绍。
 
 由于本文涉及的内容较多，所以建议读者先提前了解一下本文的目录结构，以便对本文有一个宏观的认识：
