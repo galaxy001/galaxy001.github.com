@@ -2,7 +2,7 @@
 layout: post
 date: 'Tue 2015-09-22 15:13:42 +0800'
 slug: "chinese-scientists-row-over-long-sought-protein-that-senses-magnetism"
-title: "谢张事件各种原始信件（包括谢灿的公开信和一公回信等）MagR"
+title: "谢张事件各种原始信件（包括谢灿的公开信和一公回信等）MagR/Isca1"
 description: ""
 category: 
 tags: Biology, ZT, Joke
