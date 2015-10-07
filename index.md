@@ -42,7 +42,9 @@ git subtree pull --prefix=etc/Markdown-Syntax-CN https://gitcafe.com/Pause_J/Mar
 
     https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown
 
+## jsTree
 
+   * [本地镜像](/etc/jstree/jstree.html)
 
 ## Old programming tips
 
