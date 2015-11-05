@@ -230,6 +230,7 @@ YO UA RE CR AZ YX
 ### See also
 
 * [架空文字](http://dic.pixiv.net/a/%E6%9E%B6%E7%A9%BA%E6%96%87%E5%AD%97)
+* [架空言語](http://dic.pixiv.net/a/%E6%9E%B6%E7%A9%BA%E8%A8%80%E8%AA%9E)
 * [人工文字](https://ja.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E6%96%87%E5%AD%97)
 * [Constructed script](https://en.wikipedia.org/wiki/Constructed_script)
 
