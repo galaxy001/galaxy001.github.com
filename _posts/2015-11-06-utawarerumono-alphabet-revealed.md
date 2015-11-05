@@ -11,6 +11,8 @@ tags: ACG
 
 《传颂之物 虚伪的假面》动画开播一个月，日本网友成功破解了其中出现的文字。和其他许多幻想、科幻题材动画一样，动画中那些看起来奇形怪状结构复杂的文字，其实也只是换了个写法的日文罗马音。对应字母表，很容易理解文字的内容。
 
+Utawarerumono Alphabet Revealed
+
 http://yaraon-blog.com/archives/72560
 アニメ『うたわれるもの 偽りの仮面』で使われてる文字が解読される！解読班すげぇ
 
@@ -19,7 +21,7 @@ http://nozomi.2ch.sc/test/read.cgi/gamesrpg/1446373783/
 252: 名前：助けて！名無しさん！：2015/11/01(日) 23:20:05.34 ID:RPjR0Z70.net[3/4]
 ![http://www.dotup.org/uploda/www.dotup.org586649.png](/assets/images/2015/www.dotup.org586649.png)
 ![http://www.dotup.org/uploda/www.dotup.org586652.png](/assets/images/2015/www.dotup.org586652.png)
-![http://www.dotup.org/uploda/www.dotup.org586653.png](/assets/images/2015/www.dotup.org586653.png)
+![http://www.dotup.org/uploda/www.dotup.org586653.png](/assets/images/2015/www.dotup.org586653.png)  
 解読　あと任せた
 
 262 ：助けて！名無しさん！：2015/11/01(日) 23:29:09.57 ID:INKH2nii.net[21/25]
@@ -176,7 +178,7 @@ http://www49.atwiki.jp/aniwotawiki/pages/32817.html
 
 330 ：助けて！名無しさん！：2015/11/02(月) 04:51:26.94 ID:4R7yPCET.net[5/5]
 ![http://www.dotup.org/uploda/www.dotup.org586991.png](/assets/images/2015/www.dotup.org586991.png)
-![http://www.dotup.org/uploda/www.dotup.org586992.png](/assets/images/2015/www.dotup.org586992.png)
+![http://www.dotup.org/uploda/www.dotup.org586992.png](/assets/images/2015/www.dotup.org586992.png)  
 需要あるかどうかわからんがほいさ
 
 334 ：助けて！名無しさん！：2015/11/02(月) 05:53:59.10 ID:ePjOzT38.net
@@ -196,30 +198,29 @@ http://www49.atwiki.jp/aniwotawiki/pages/32817.html
 寿司だの羊羹だのなんかないだろｗ
 
 347 ：助けて！名無しさん！：2015/11/02(月) 08:31:15.93 ID:rbRuGYYC.net[2/4]
-http://i.imgur.com/ZgWaQpq.jpg 
 ![http://i.imgur.com/ZgWaQpq.jpg](/assets/images/2015/UArZgWaQpq.jpg)
 
-とりあえず文字まとめてみた 
+とりあえず文字まとめてみた  
 読みにくかったらすまんな
 
 ---
 
-(´･ω･｀)漫画の世界とかの文字解読班ってすげーと思うわ
+(´･ω･｀)漫画の世界とかの文字解読班ってすげーと思うわ  
 (´･ω･｀)だってこういうのって１時間とかでわかるもんじゃないでしょ・・・・
 
 ---
 
-名前：名無しさん 投稿日：2015-11-02 19:55:37
+名前：名無しさん 投稿日：2015-11-02 19:55:37  
 文字の出現頻度から分析するのは基本だな
 
-名前：名無しさん 投稿日：2015-11-02 19:55:58
+名前：名無しさん 投稿日：2015-11-02 19:55:58  
 日本語はローマ字としてアプローチした場合、母音と子音の組み合わせだから、意外と分かりやすいんだよ
 でも、わざわざアニメごときで解読しようとは思わないな
 
-解読したのがアニメスタッフではないなら、簡単な暗号でこう言いたい
+解読したのがアニメスタッフではないなら、簡単な暗号でこう言いたい  
 YO UA RE CR AZ YX
 
-名前：名無しさん 投稿日：2015-11-02 20:35:04
+名前：名無しさん 投稿日：2015-11-02 20:35:04  
 こういうのってサヴァン的才能なのか、
 単に暗号解読が大好きな数学脳なのか、
 職業的に暗号解読がよくある税務署・国税局職員？
