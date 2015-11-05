@@ -233,9 +233,9 @@ YO UA RE CR AZ YX
 * [人工文字](https://ja.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E6%96%87%E5%AD%97)
 * [Constructed script](https://en.wikipedia.org/wiki/Constructed_script)
 
-*[the Madoka Runes](http://wiki.puella-magi.net/Deciphering_the_runes)
+* [the Madoka Runes](http://wiki.puella-magi.net/Deciphering_the_runes)
 
-### 架空文字一覧
+### [架空文字一覧](http://dic.pixiv.net/a/%E6%9E%B6%E7%A9%BA%E6%96%87%E5%AD%97#h2_2)
 
 ( )内は登場する作品名。
 
@@ -251,7 +251,7 @@ YO UA RE CR AZ YX
 * DearS文字(DearS) 
 * Unitology文字(DeadSpaceシリーズ) 
 * どせいさん文字(ゲーム「MOTHER」シリーズ) 
-* まどか文字(魔法少女まどか☆マギカ) 
+* [まどか文字](http://dic.pixiv.net/a/%E3%81%BE%E3%81%A9%E3%81%8B%E6%96%87%E5%AD%97)([魔法少女まどか☆マギカ](http://dic.pixiv.net/a/%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E3%81%BE%E3%81%A9%E3%81%8B%E2%98%86%E3%83%9E%E3%82%AE%E3%82%AB)) 
 * アンノーン文字(ポケットモンスター) 
 * ウルトラ文字(ウルトラマンシリーズ) 
 * エマーン文字(超時空世紀オーガス) 
@@ -268,7 +268,7 @@ YO UA RE CR AZ YX
 * テリウス古代文字(ファイアーエムブレム蒼炎の軌跡・暁の女神) 
 * ハイラル文字(ゼルダの伝説) 
 * ヒュムノス文字(アルトネリコシリーズ) 
-* フロニャ文字(DOGDAYS) 
+* [フロニャ文字](http://dic.pixiv.net/a/%E3%83%95%E3%83%AD%E3%83%8B%E3%83%A3%E6%96%87%E5%AD%97)([DOGDAYS](http://dic.pixiv.net/a/DOGDAYS)) 
 * マジカル語(魔動王グランゾート) 
 * ミッドチルダ文字(魔法少女リリカルなのは) 
 * メルニクス文字(テイルズオブエターニア) 
@@ -282,4 +282,5 @@ YO UA RE CR AZ YX
 
 #### 言語を表さない文字
 
-ルーン文字([サガフロンティア](http://dic.pixiv.net/a/%E3%82%B5%E3%82%AC%E3%83%95%E3%83%AD%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A2)) - 実在の[ルーン文字](http://dic.pixiv.net/a/%E3%83%AB%E3%83%BC%E3%83%B3%E6%96%87%E5%AD%97)も混ぜて使用している。 
+* ルーン文字([サガフロンティア](http://dic.pixiv.net/a/%E3%82%B5%E3%82%AC%E3%83%95%E3%83%AD%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A2)) - 実在の[ルーン文字](http://dic.pixiv.net/a/%E3%83%AB%E3%83%BC%E3%83%B3%E6%96%87%E5%AD%97)も混ぜて使用している。 
+
