@@ -117,6 +117,7 @@ function foo(data1, data2)
    return b(data2)
 ```
 其中 data1、data2 是参数。编译器会把这个代码翻译成以下汇编：
+
 ```
 foo:
   mov  reg,[sp+data1] ; 透过栈指针（sp）取得 data1 并放到暂用暂存器。
@@ -129,7 +130,9 @@ foo:
   pop                 ; 把 data2 從栈上拿掉。
   ret
 ```
+
 尾部调用优化会将代码变成：
+
 ```
 foo:
   mov  reg,[sp+data1] ; 透过栈指针（sp）取得 data1 并放到暂用暂存器。

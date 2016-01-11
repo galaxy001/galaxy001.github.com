@@ -26,6 +26,7 @@ SMTP--Simple Mail Transfer Protocol,简单邮件传输协议。这是一个应�
 而这背后的数据传输，不是我们应用层协议需要关心的了，一般，我们可以使用socket传输信息。
 
 在Python中，我们可以很轻松的发送一封邮件，Python中内置了SMTP模块，下面的代码演示了Python中发送一封邮件的过程：
+
 ``` python
 import smtplib
 
@@ -52,12 +53,14 @@ mailserver.sendmail('me@gmail.com','you@gmail.com',msg.as_string())
 
 mailserver.quit()
 ```
+
 我们用email模块构建一个我们的邮件，然后，使用SMTP连接服务器，如果我们需要SSL或者TLS加密（并且服务器还支持的话，或者服务器强制要求开启TLS），可以看到，使用```starttls```来开启TLS/SSL，其实，在打招呼之后，服务器会返回给我们是否需要SSL，支持的认证类型等等。最后，sendmail，quit，结束。
 
 在Python中，一切都是这么简单，但这也隐藏了很多SMTP的细节，在下面的部分，我们会实现一个SMTP的客户端，我们首先不支持SSL，这会使我们的代码量迅速膨胀，我们在这里仅仅实现SMTP的内核。
 ### 实现一个SMTP客户端
 
 我们首先浏览一遍客户端与服务器之间交互的流程：
+
 ```
 S: 220 smtp.example.com ESMTP Postfix
 C: HELO relay.example.org
@@ -92,7 +95,8 @@ C代表客户端，S代表服务器端。我们可以看见的是，发送邮件
 我们就按照这个流程来和服务器对话。
 
 我们首先定义一个类，```SMTPClient```，可想而知的是，类之中肯定有上面Python代码中的那几个函数，所以，我们的类先定义成下面的这个样子：
-``` cpp
+
+```cpp
 class SMTPClient
 {
 private:
@@ -115,14 +119,16 @@ public:
 想要发送一封邮件，首先我们需要连接邮件服务器。我们在这里使用socket连接服务器，至于邮箱服务器，到各个邮箱的web版的帮助中心都能得到。
 
 使用socket连接服务器如下，windows的socket编程，首先我们需要include两个头文件：
-``` cpp
+
+```cpp
 #include <WinSock2.h>
 
 #pragma comment(lib, "ws2_32.lib")
 ```
+
 这之后，我们可以使用socket连接服务器了，这和连接其他的服务器没有任何区别。
 
-``` cpp
+```cpp
 void SMTPClient::connectServer(std::string server, int port)
 {	
 	//初始环境创建
@@ -162,16 +168,19 @@ void SMTPClient::connectServer(std::string server, int port)
 	//接收服务器数据
 }
 ```
+
 上面的代码主要展示了windows的socket编程，这其中还有一段IP获取的过程，代码比较清晰。在最后，其实服务器还会返回一段信息，我这里没有写出来，只需要调用```recv```函数就可以把这段数据都出来，这段信息一般是我们所连接到的服务器的概括信息，比如：
+
 ```
 QQ SMTP coremail server, port .........
 ```
+
 类似如此
 
 在建立连接之后，我们需要发出我们的第一条指令```EHLO```:
 发送指令的思想很简单，效果却很动人，因为这就像对面有一个人和你对话一样,而无论是SayHello，还是发送信息，我们都只需要把信息压在字符串中，通过socket的```send```函数发送出去就OK，**而后面的函数，与SayHello的实现几乎同样，只不过是换了一个发送的字符串**：
 
-``` cpp
+```cpp
 void SMTPClient::SayHello()
 {
 	if (!connected)
@@ -203,7 +212,9 @@ void SMTPClient::SayHello()
 	std::cout << ret << std::endl;
 }
 ```
+
 在与QQ服务器```EHLO```后，我们会得到下面这串信息:
+
 ```
 250 smtp.qq.com
 PIPELINING
@@ -214,6 +225,7 @@ MAILCOMPRESS
 8BITMIME
 STARTTLS
 ```
+
 这些信息中，有几条非常的重要：
 
 * 250：表示一切正常
@@ -233,10 +245,13 @@ STARTTLS
 如果我们有```username```和```password```两个等待认证的值。
 
 首先 AUTH PLAIN，我们需要发送给服务器的字符串为：
+
 ```
 "LOGIN PLAIN \0username\0password"
 ```
+
 第二种，如果是AUTH CRAM-MD5，那么我们需要按照下面的流程发送指令：
+
 ```
 C: AUTH CRAM-MD5
 S: 334
@@ -244,21 +259,25 @@ PENCeUxFREJoU0NnbmhNWitOMjNGNndAZWx3b29kLmlubm9zb2Z0LmNvbT4=
 C: ZnJlZCA5ZTk1YWVlMDljNDBhZjJiODRhMGMyYjNiYmFlNzg2ZQ==
 S: 235 Authentication successful.
 ```
+
 就是说，我们需要先发送一条：```AUTH CRAM-MD5```,服务器会返回一段base64编码，我们称其为```C```，我们处理来自服务器的这个编码，返回给服务器一个处理后的结果，处理的流程如下：
+
 ```
 * response = ''
 * c = base64.decode(C)
 * response = user + ' ' +  hmac.HMAC(password, c).hexdigest()
 * response = base64.encode(response)
-
 ```
+
 最后是```AUTH LOGIN```，这是现在最常用的认证方法，这个方法按照下面的流程进行：
+
 ```
 C: AUTH LOGIN ZHVtbXk=
 S: 334 UGFzc3dvcmQ6
 C: Z2VoZWlt
 S: 235 Authentication successful.
 ```
+
 第一句```AUTH LOGIN ZDASDADH=```,后面的这段base64编码是username的编码，这之后，服务器会返回一个334，之后第二句话，我们发送password的base64编码，如果验证成功，服务器会返回235。
 
 在实现的过程中，我参考了Python的smtplib中login的编码实现，其实同SayHello函数一样，就是简单的```send```字符串（base64处理加密的字符串），```recv```服务器的应答，实现原理是同样的，在这里，Python的编码实现很漂亮，我给出Python的编码：
@@ -343,8 +362,10 @@ def login(self, user, password):
             raise SMTPAuthenticationError(code, resp)
         return (code, resp)
 ```
+
 如果认证成功，我们就可以发送邮件的主题内容了，这段的实现方法和前面的实现原理都是类似的，发送，接收，发送，接收，我们能够体会到那种和服务器对话的过程。在实现中，我们可以发现，发送和接受，是可以用复用的函数进行实现的，所以在这之后的过程我们可以大概的写成下面的样子：
-``` cpp
+
+```cpp
 _sendString(("MAIL FROM:<" + m_fromAddr + ">\r\n"));
 _sendString(("RCPT TO:<" + m_toAddr +">\r\n"));
 _sendString("DATA\r\n");
@@ -360,6 +381,7 @@ _sendString("QUIT\r\n");
 最后，终结正文使用标签```\r\n.\r\n```。
 
 使用```QUIT```结束这次会话，服务器还会返回数据,一般是：
+
 ```
 221 Bye
 ```
