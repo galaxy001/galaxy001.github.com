@@ -23,7 +23,7 @@ Since the contents mean more than the cover, thus no time spent on this cover.
 </ul>
 <a href="archive.html"><span class="grey">...SEE ALL</span></a>
 
-## Markdown 
+## Markdown 镜像
 
 * Markdown 语法 (简体中文版)
 
@@ -42,9 +42,10 @@ git subtree pull --prefix=etc/Markdown-Syntax-CN https://gitcafe.com/Pause_J/Mar
 
     https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown
 
-## jsTree
+## 其他本地镜像
 
-   * [本地镜像](/etc/jstree/jstree.html)
+   * [jsTree](/etc/jstree/jstree.html)
+   * [Regulex](http://galaxysd.github.io/regulex/)
 
 ## Old programming tips
 
