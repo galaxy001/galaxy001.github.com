@@ -9,9 +9,7 @@ tags: Galaxy, Tips
 ---
 {% include JB/setup %}
 
-## Linux
-
-### Install
+## Install on Linux
 
 Follow the Gentoo ebuild [net-misc/dropbox/dropbox-3.12.6.ebuild](https://gitweb.gentoo.org/repo/gentoo.git/tree/net-misc/dropbox/dropbox-3.12.6.ebuild).
 
@@ -24,12 +22,12 @@ Follow the Gentoo ebuild [net-misc/dropbox/dropbox-3.12.6.ebuild](https://gitweb
 	rm -vf libQt5* libicu* qt.conf || die
 	rm -vf wmctrl || die
 	rm -vrf PyQt5* *pyqt5* images || die
-	# rm -vf librsync.so.1 || die # 我删除`librsync.so.1`后报错，因为它需要"net-libs/librsync-1"。
+	# rm -vf librsync.so.1 || die # 删除`librsync.so.1`会报错，因为它需要"net-libs/librsync-1"。
 	rm -rf library.zip || die # '*.egg'需要保留。
 	ln -s dropbox library.zip || die
 ````
 
-#### For **systemd**
+### For **systemd**
 
 * `/usr/lib/systemd/system/dropbox@.service`:
 
@@ -66,7 +64,7 @@ wget -O ~/bin/dropbox.py "https://www.dropbox.com/download?dl=packages/dropbox.p
 ````
 Mirrored [here](/assets/wp-uploads/2016/dropbox.py) due to the GFW.
 
-#### for **OpenRC**
+### for **OpenRC**
 
 * `/etc/init.d/dropbox`
 
@@ -158,5 +156,57 @@ DROPBOX_USERS=""
 PID_DIR=/var/run/dropbox
 ````
 
+---
 
-## Mac
+## Multiple Dropbox Accounts/Instances
+
+### Multiple Dropboxen on Mac [the right way](http://www.codeography.com/2011/07/07/multiple-dropboxen-on-mac.html)
+
+* `~/Library/LaunchAgents/com.dropbox.alt.plist`, updating the *USERNAME* for *your username*.
+
+````xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>com.dropbox.alt</string>
+    <key>LowPriorityIO</key>
+    <true/>
+    <key>EnvironmentVariables</key>
+    <dict>
+      <key>HOME</key>
+      <string>/Users/USERNAME/.dropbox-alt</string>
+    </dict>
+    <key>ProgramArguments</key>
+    <array>
+      <string>/Applications/Dropbox.app/Contents/MacOS/Dropbox</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+  </dict>
+</plist>
+````
+
+````bash
+launchctl load ~/Library/LaunchAgents/com.dropbox.alt.plist
+launchctl start com.dropbox.alt
+````
+
+The Dropbox dialog will appear. On the "Setup Type" screen of their installer make sure you change the folder to a custom location that makes sense for you (otherwise it will put it in ~/.dropbox-alt/Dropbox).
+
+![custom location](/assets/wp-uploads/2016/DropboxAdv.png)
+
+---
+
+## Tips
+
+### Check for 'conflicted copy'
+
+````bash
+# https://github.com/chauncey-garrett/osx-launchd-check-for-dropbox-conflicts
+# this will look for files with the name "'s conflicted copy YYYY-MM-DD" in it
+# except this in the Trash or the .dropbox.cache folder.
+find "$HOME/Dropbox" -path "*(*'s conflicted copy [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*" -print |egrep -v "$HOME/Dropbox/.dropbox.cache|$HOME/.Trash/"
+````
+
