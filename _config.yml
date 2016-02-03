@@ -49,7 +49,8 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : https://galaxy001.github.io
+#production_url : https://galaxy001.github.io
+production_url : https://galaxysd.us
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -88,7 +89,8 @@ JB :
   #   http://s3.amazonaws.com/yoursite/themes/watermelon
   #   /assets
   #
-  ASSET_PATH : false
+  #ASSET_PATH : false
+  ASSET_PATH : http://galaxysd.us/assets/themes/twitter
 
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change them here if needed.
