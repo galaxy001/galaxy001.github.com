@@ -294,3 +294,11 @@ HOME=~/.dropbox-alt ~/.dropbox-alt/.dropbox-dist/dropboxd
 find "$HOME/Dropbox" -path "*(*'s conflicted copy [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*" -print |egrep -v "$HOME/Dropbox/.dropbox.cache|$HOME/.Trash/"
 ````
 
+### 3rd-party Tools
+
+* Dropbox Uploader <https://github.com/andreafabrizi/Dropbox-Uploader>
+
+Dropbox Uploader is a **BASH** script which can be used to upload, download, delete, list files (and more!) from **Dropbox**, an online file sharing, synchronization and backup service.  
+It's written in BASH scripting language and only needs **cURL**.
+
+
