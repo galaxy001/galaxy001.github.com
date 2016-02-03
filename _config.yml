@@ -3,7 +3,7 @@
 permalink: /:categories/:year:month:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-highlighter: pygments
+#highlighter: pygments
 
 # added by Galaxy
 paginate: 10
@@ -11,14 +11,18 @@ paginate: 10
 # From https://help.github.com/articles/using-jekyll-with-pages#troubleshooting
 safe: true
 lsi: false
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
 
 # https://help.github.com/articles/migrating-your-pages-site-from-maruku
-#markdown: kramdown
-markdown: rdiscount
+markdown: kramdown
+#markdown: rdiscount
 
 # http://jekyllrb.com/docs/configuration/#markdown-options
-#kramdown:
-#  input: GFM
+kramdown:
+  input: GFM
 rdiscount:
   extensions: [smart, footnotes, generate_toc, autolink]
   toc_token: "!TOC"
