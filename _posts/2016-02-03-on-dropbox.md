@@ -188,6 +188,8 @@ PID_DIR=/var/run/dropbox
 </plist>
 ````
 
+* run the following commands:
+
 ````bash
 launchctl load ~/Library/LaunchAgents/com.dropbox.alt.plist
 launchctl start com.dropbox.alt
@@ -196,6 +198,88 @@ launchctl start com.dropbox.alt
 The Dropbox dialog will appear. On the "Setup Type" screen of their installer make sure you change the folder to a custom location that makes sense for you (otherwise it will put it in ~/.dropbox-alt/Dropbox).
 
 ![custom location](/assets/wp-uploads/2016/DropboxAdv.png)
+
+Done. No faux app bundles. Everything is controled by launchd, just the way it should be.
+
+注意：Dropbox的邀请会判断是否在同一电脑上关联。所以新帐号如果是邀请的，需要换新用户运行Dropbox才有效。
+
+另外，关于不登录直接运行Dropbox，[有人说](http://superuser.com/questions/549793/starting-dropbox-on-os-x-through-ssh-without-needing-to-log-in-to-desktop)ssh进去后`open -a "Dropbox.app"`就可以了，没测试。
+
+---
+
+### [offical wiki](http://www.dropboxwiki.com/tips-and-tricks/run-multiple-instances-of-dropbox-simultaneously-on-linux-or-mac-os-x) for Mac
+
+````bash
+HOME=$HOME/.dropbox-alt /Applications/Dropbox.app/Contents/MacOS/Dropbox &
+````
+
+#### Automator Method
+
+1. Open Automator from your Applications folder
+2. Choose the ‘Application’ template from the template chooser
+3. In the Actions Pane on the right side, Choose ‘Library > Utilities’
+4. From the next pane choose ‘Run Shell Script’ and drag it into your workflow.
+5. In the Run Shell Script text box, paste the command you used above:<br> `bash HOME=$HOME/.dropbox-alt /Applications/Dropbox.app/Contents/MacOS/Dropbox &`
+6. Make sure to include the linebreak.
+7. Run the script (button on the top right) to make sure it works.
+8. Go to File > Save As and save anywhere.
+9. Add the resulting application to your Login items.
+
+#### App Bundle Method
+
+In order to run the second instance automatically on login, you’ll have to create a small app bundle, which you will later add to startup items in the System Preferences “Accounts” pane. Starts by pasting the following command into Terminal. Again, do not include the initial dollar sign of each block:
+
+````bash
+mkdir -p ~/<whaveter place you like>/DropboxAltStarter.app/Contents/MacOS/
+````
+
+This will create recursively, if they do not exist, the folders “DropboxAltStarter.app”, “Contents” and “MacOS”. If you change the name “DropboxAltStarter” for something else, make sure you change it everywhere relevant in the next lines.
+
+Now, open a text editor, and paste the following code:
+
+````xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>CFBundlePackageType</key>
+		<string>APPL</string>
+		<key>CFBundleExecutable</key>
+		<string>DropboxAltStarter</string>
+		<key>LSUIElement</key>
+		<string>1</string>
+	</dict>
+</plist>
+````
+
+And save it with the name “Info.plist” (this is crucial, do not choose another name) and save the file inside “DropboxAltStarter.app/Contents”! Now, open a new text file in the text editor, and paste the following text (warning: make sure you remove the leading whitespaces – I had to put one because of wiki formatting):
+
+````bash
+#!/bin/bash  HOME=/Users/$USER/.dropbox-alt /Applications/Dropbox.app/Contents/MacOS/Dropbox
+````
+
+and save it with the same name as specified in the Info.plist file (i.e. look at the string just below “`<key>CFBundleExecutable</key>`”). And save the file inside “DropboxAltStarter.app/Contents/MacOS”! (Yes, with “MacOS” this time). You can close your text editor.
+
+Make sure that your script is executable, by typing the following command in a terminal:
+
+````bash
+chmod 755 ~/<whatever place you like>/DropboxAltStarter.app/Contents/MacOS/DropboxAltStarter
+````
+
+Now, in the “`<whaveter place you like>`” directory, you have a small Mas OS X app bundle. You can add it to your login items in the System Preferences->Accounts. You can also double-click on it everytime you need to start this second instance of Dropbox (i.e. if it crashed).
+
+---
+
+### on Linux, [offical wiki](http://www.dropboxwiki.com/forums-faq/running-multiple-instances-of-dropbox)
+
+````bash
+mkdir ~/.dropbox-alt
+HOME=~/.dropbox-alt dropbox start -i # run the Dropbox installer in “first use” mode
+ln -s ~/.dropbox-alt/Dropbox ~/DropboxAlt
+
+# run the “alternate” Dropbox manually, for testing
+HOME=~/.dropbox-alt ~/.dropbox-alt/.dropbox-dist/dropboxd
+````
 
 ---
 
